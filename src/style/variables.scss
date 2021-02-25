@@ -1,5 +1,44 @@
 // Variables Bootstrap 4
 
-$red:     #cc2eaa;
-$green:   #2ecc71;
+//$red:     #cc2eaa;
+//$green:   #2ecc71;
 
+$red-3: #fc0000;
+$red-1: #ff0000;
+$font-bold: "Montserrat Bold", sans-serif;
+$black: #000000;
+$orange-dark: #d46c19;
+$title-size-default: 45px;
+$font-black: "Montserrat Black", sans-serif;
+$purpur-dark: #8f5256;
+$yellow: #fff200;
+$font-medium: "Montserrat Medium", sans-serif;
+$red-4: #f20202;
+$red-2: #f20006;
+$font-ExtraBold: "Montserrat ExtraBold", sans-serif;
+$blue: #24a0be;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1170px
+) !default;
