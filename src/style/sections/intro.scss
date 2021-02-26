@@ -1,0 +1,123 @@
+.intro {
+  & .intro__title {
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: $black;
+    font-family: $font-ExtraBold;
+    font-size: 45px;
+    line-height: normal;
+
+    & .intro__title_red {
+      color: #f00303;
+    }
+  }
+
+  & .intro__subtitle {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2rem;
+    color: $black;
+    font-family: $font-bold;
+    font-size: 20px;
+    line-height: 23.01px;
+    text-transform: uppercase;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      left: 0;
+      height: 3px;
+      border-radius: 2px;
+      background: linear-gradient(
+                      130deg
+              ,$red-1 31%, rgba(0,0,0,0) 80%);
+    }
+  }
+
+  & .intro__btn {
+    margin-bottom: 3rem;
+  }
+
+  & .intro__items {
+    display: flex;
+    justify-content: space-between;
+
+    & .intro__item {
+      padding: 0 1rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    & .item__img {
+      margin-bottom: 0.5rem;
+    }
+
+    & .item__text {
+      font-family: $font-medium;
+      font-weight: 700;
+      font-size: 15px;
+      white-space: nowrap;
+
+      & .item__text_green {
+        color: #2ac411;
+        font-family: $font-bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .intro {
+
+    & .intro__title {
+      font-size: 34px;
+      white-space: normal;
+      text-align: center;
+    }
+
+    & .intro__subtitle {
+      display: block;
+      text-align: center;
+      white-space: normal;
+      &:after {
+        display: none;
+        content: "";
+      }
+    }
+
+    & .intro__btn {
+      text-align: center;
+    }
+
+    & .intro__items {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+
+      & .intro__item {
+        padding: 0 1rem !important;
+        margin-bottom: 1rem;
+
+        &:last-child {
+          width: 100%;
+        }
+      }
+
+      & .item__text {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+}

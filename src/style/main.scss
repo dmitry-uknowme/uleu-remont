@@ -43,4 +43,8 @@
 // Подключение своих SCSS файлов
 @import "fonts";
 @import "my";
+
+@import "components/btn-default";
+
 @import "sections/header";
+@import "sections/intro";
