@@ -7944,3 +7944,58 @@ a.text-dark:hover, a.text-dark:focus {
     .intro .intro__items .item__text {
       font-size: 12px;
       text-align: center; } }
+
+.service__container {
+  padding: 3em 0;
+  background-image: url("../img/service-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 1.5;
+  font-family: "Montserrat Medium", sans-serif;
+  text-transform: uppercase;
+  text-align: center; }
+
+.service-item {
+  position: relative; }
+  .service-item .item__bg {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .service-item .item__content {
+    position: relative; }
+
+.service-item__img {
+  position: relative;
+  height: 212px; }
+
+.service-item__text {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 360px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px); }
+
+.service__title {
+  margin-bottom: 2rem;
+  font-family: "Montserrat Black", sans-serif;
+  font-size: 45px;
+  font-style: italic; }
+
+.service-item {
+  margin-bottom: 2rem; }
+
+@media screen and (max-width: 1199px) {
+  .service-item__text {
+    font-size: 14px; } }

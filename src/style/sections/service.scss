@@ -1,0 +1,69 @@
+.service__container {
+  padding: 3em 0;
+
+  background-image: url("../img/service-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  //background-size: contain;
+
+  color: #ffffff;
+  line-height: 1.5;
+  font-family: $font-medium;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.service-item {
+  position: relative;
+
+  & .item__bg {
+    background: rgba(0,0,0,0.5);;
+    //filter: blur(4px);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  & .item__content {
+    position: relative;
+  }
+}
+
+.service-item__img {
+  position: relative;
+  height: 212px;
+  //top: 50px;
+}
+
+.service-item__text {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 360px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  padding: 15px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+}
+
+.service__title {
+  margin-bottom: 2rem;
+  font-family: $font-black;
+  font-size: $title-size-default;
+  font-style: italic;
+}
+
+.service-item {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1199px){
+  .service-item__text {
+    font-size: 14px;
+  }
+}
