@@ -53,3 +53,18 @@
     height: 345px;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .scheme__bg {
+    background: rgb(246,246,246);
+    background: none;
+  }
+
+  .scheme-item__container {
+    display: flex;
+    justify-content: center;
+    & .scheme-item {
+      width: 115px;
+    }
+  }
+}

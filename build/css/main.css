@@ -8048,3 +8048,15 @@ a.text-dark:hover, a.text-dark:focus {
   top: -72px; }
   .scheme__img-right img {
     height: 345px; }
+
+@media screen and (max-width: 1199px) {
+  .scheme__bg {
+    background: #f6f6f6;
+    background: none; }
+  .scheme-item__container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .scheme-item__container .scheme-item {
+      width: 115px; } }
