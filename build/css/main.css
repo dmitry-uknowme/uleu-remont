@@ -8003,6 +8003,9 @@ a.text-dark:hover, a.text-dark:focus {
   .service-item__text {
     font-size: 14px; } }
 
+.scheme {
+  margin-bottom: 4rem; }
+
 .scheme__title {
   margin-bottom: 2rem;
   text-align: center;
@@ -8060,3 +8063,63 @@ a.text-dark:hover, a.text-dark:focus {
         justify-content: center; }
     .scheme-item__container .scheme-item {
       width: 115px; } }
+
+.problems__title {
+  text-transform: uppercase;
+  line-height: normal;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Montserrat ExtraBold", sans-serif;
+  font-size: 40px;
+  font-style: italic; }
+  .problems__title .color-red {
+    color: #ff0000; }
+  .problems__title .color-green {
+    color: #16f402; }
+
+.problems__subtitle {
+  color: #d2d2d2;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Montserrat ExtraBold", sans-serif;
+  font-size: 32px;
+  font-style: italic; }
+
+.problems-item {
+  position: relative; }
+
+.problems-item__text {
+  position: absolute;
+  top: 30px;
+  left: 46px;
+  font-size: 20px;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Montserrat ExtraBold", sans-serif;
+  font-style: italic;
+  text-transform: uppercase; }
+
+@media screen and (max-width: 1199px) {
+  .problems__title {
+    font-size: 28px; }
+  .problems__subtitle {
+    font-size: 20px; }
+  .problems-item {
+    margin-bottom: 0.5rem; }
+  .problems-item__text {
+    font-size: 14px;
+    top: 35px;
+    left: 39px; }
+    .problems-item__text img {
+      clip: rect(0px, 50px, 100px, 0px);
+      max-height: 160px; }
+  .problems-item__container:nth-child(1) .problems-item {
+    left: -50px; }
+  .problems-item__container:nth-child(2) .problems-item {
+    right: -50px; }
+  .problems-item__container:nth-child(3) .problems-item {
+    left: -50px; }
+  .problems-item__container:nth-child(4) .problems-item {
+    right: -50px; } }
