@@ -1,4 +1,26 @@
 .btn-default {
+  padding: 20px 40px;
+  background-color: $red-1;
+  background-repeat:  no-repeat;
+  background-size: 100% 100%;
+  border: none;
+
+  color: #ffffff;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: $font-ExtraBold;
+  font-style: italic;
+  line-height: 24.38px;
+
+  & .btn-default__text {
+    display: inline-block;
+  }
+}
+
+.btn-default_prgm {
+  margin-left: 12px;
+
   transform: skew(20deg);
   padding: 20px 40px;
   background-color: $red-1;
@@ -21,7 +43,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .btn-default {
+  .btn-default, .btn-default_prgm {
     padding: 10px 20px;
     font-size: 15px;
   }

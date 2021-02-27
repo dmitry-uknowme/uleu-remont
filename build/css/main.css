@@ -7782,6 +7782,23 @@ a.text-dark:hover, a.text-dark:focus {
   src: url("../fonts/Montserrat-Bold.ttf"); }
 
 .btn-default {
+  padding: 20px 40px;
+  background-color: #ff0000;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #ffffff;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Montserrat ExtraBold", sans-serif;
+  font-style: italic;
+  line-height: 24.38px; }
+  .btn-default .btn-default__text {
+    display: inline-block; }
+
+.btn-default_prgm {
+  margin-left: 12px;
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
   padding: 20px 40px;
@@ -7796,13 +7813,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Montserrat ExtraBold", sans-serif;
   font-style: italic;
   line-height: 24.38px; }
-  .btn-default .btn-default__text {
+  .btn-default_prgm .btn-default__text {
     display: inline-block;
     -webkit-transform: skew(-20deg);
             transform: skew(-20deg); }
 
 @media screen and (max-width: 450px) {
-  .btn-default {
+  .btn-default, .btn-default_prgm {
     padding: 10px 20px;
     font-size: 15px; } }
 
@@ -8064,6 +8081,9 @@ a.text-dark:hover, a.text-dark:focus {
     .scheme-item__container .scheme-item {
       width: 115px; } }
 
+.problems {
+  margin-bottom: 5rem; }
+
 .problems__title {
   text-transform: uppercase;
   line-height: normal;
@@ -8123,3 +8143,68 @@ a.text-dark:hover, a.text-dark:focus {
     left: -50px; }
   .problems-item__container:nth-child(4) .problems-item {
     right: -50px; } }
+
+.reviews__title {
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-bottom: 2rem;
+  font-family: "Montserrat ExtraBold", sans-serif;
+  font-size: 40px;
+  font-style: italic; }
+  .reviews__title .color-red {
+    color: #ff0000; }
+  .reviews__title .color-green {
+    color: #16f402; }
+
+.review-item__author {
+  text-transform: uppercase;
+  font-family: "Montserrat Medium", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #f20202; }
+
+.review-item__header {
+  margin-bottom: 1.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.review-item__content {
+  margin-bottom: 1.5rem;
+  max-width: 513px;
+  font-family: "Montserrat Medium", sans-serif;
+  font-weight: 500; }
+
+.review-item__stars {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 3rem; }
+
+.review-star {
+  margin-left: 0.5rem;
+  height: 17px;
+  width: 17px; }
+
+.reviews__img {
+  position: relative;
+  left: -200px;
+  top: -30px; }
+  .reviews__img img {
+    min-width: 500px; }
+
+@media screen and (max-width: 1199px) {
+  .reviews__title {
+    text-align: center;
+    font-size: 28px;
+    white-space: normal; }
+  .review-item__header {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .review-item__content {
+    text-align: center; }
+  .reviews__btn {
+    text-align: center; } }

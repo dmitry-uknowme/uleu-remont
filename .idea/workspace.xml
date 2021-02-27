@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36024853-15e7-4e1c-b170-017452af0337" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/style/sections/problems.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/sections/reviews.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/components/btn-default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components/btn-default.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/scheme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/scheme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/problems.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/problems.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/scheme.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/scheme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/sections/problems.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/problems.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/reviews.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <workItem from="1614257546166" duration="23584000" />
       <workItem from="1614331471620" duration="347000" />
       <workItem from="1614331825561" duration="10943000" />
-      <workItem from="1614408369930" duration="8291000" />
+      <workItem from="1614408369930" duration="11382000" />
     </task>
     <task id="LOCAL-00001" summary="header">
       <created>1614281297951</created>
@@ -108,18 +109,28 @@
       <option name="project" value="LOCAL" />
       <updated>1614410844022</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="problems">
+      <created>1614420830387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614420830387</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="header" />
     <MESSAGE value="intro" />
     <MESSAGE value="service" />
     <MESSAGE value="scheme" />
     <MESSAGE value="scheme mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="scheme mobile" />
+    <MESSAGE value="problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="problems" />
   </component>
 </project>
