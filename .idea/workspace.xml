@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36024853-15e7-4e1c-b170-017452af0337" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/style/sections/contacts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/contacts__background1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/problems-item-3_new.png.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/support.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/support.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/sections/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/contacts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/contacts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +71,7 @@
       <workItem from="1614331471620" duration="347000" />
       <workItem from="1614331825561" duration="10943000" />
       <workItem from="1614408369930" duration="22659000" />
+      <workItem from="1614505877395" duration="4579000" />
     </task>
     <task id="LOCAL-00001" summary="header">
       <created>1614281297951</created>

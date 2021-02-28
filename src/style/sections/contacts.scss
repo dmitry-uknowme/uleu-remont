@@ -108,6 +108,47 @@
   }
 
   & iframe {
+    height: 100%;
+    width: 100%;
     border: 0;
+  }
+}
+
+.contacts__menu {
+  position: relative;
+  left: 5px;
+
+  & ul {
+    position: relative;
+  }
+
+  & ul:before {
+    position: absolute;
+    left: -30px;
+    top: 8px;
+    content: " ";
+    background-image: url("../img/contacts__settings.png");
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__title {
+    text-align: center;
+  }
+
+  .contacts__phone-number:last-child {
+    margin-bottom: 3rem;
+  }
+
+  .contacts__btn {
+    width: 100%;
+  }
+
+  .contacts__menu {
+    display: flex;
+    justify-content: center;
+    text-align: left;
   }
 }
