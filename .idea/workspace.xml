@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36024853-15e7-4e1c-b170-017452af0337" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/style/sections/quiz.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/contacts__background1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems-item-3_new.png.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/sections/intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/quiz.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,9 @@
       <workItem from="1614331471620" duration="347000" />
       <workItem from="1614331825561" duration="10943000" />
       <workItem from="1614408369930" duration="22659000" />
-      <workItem from="1614505877395" duration="4579000" />
+      <workItem from="1614505877395" duration="5793000" />
+      <workItem from="1614617996249" duration="6447000" />
+      <workItem from="1614699272144" duration="3648000" />
     </task>
     <task id="LOCAL-00001" summary="header">
       <created>1614281297951</created>
@@ -129,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614436106206</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="contacts">
+      <created>1614518324607</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614518324607</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +156,7 @@
     <MESSAGE value="problems" />
     <MESSAGE value="reviews" />
     <MESSAGE value="support" />
-    <option name="LAST_COMMIT_MESSAGE" value="support" />
+    <MESSAGE value="contacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="contacts" />
   </component>
 </project>
