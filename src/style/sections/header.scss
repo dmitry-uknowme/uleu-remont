@@ -32,8 +32,11 @@
       font-family: $font-medium;
       color: $black;
       font-size: 10px;
+      & a {
+        color: $black;
+      }
     }
-    & .header__phone-number {
+    & .header__phone-number a {
       color: #fe0000;
       text-transform: uppercase;
       font-family: $font-bold;

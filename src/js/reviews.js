@@ -3,16 +3,20 @@ var owl = $('.owl-carousel');
 $(owl).owlCarousel({
     loop:true,
     margin:0,
-    nav:true,
+    nav:false,
     responsive:{
         0:{
             items:1
         },
         600:{
-            items:3
+            items:1
         },
         1000:{
-            items:5
+            items:1
         }
     }
+})
+
+$('.reviews-btn__next').click(function () {
+    owl.trigger('next.owl.carousel');
 })

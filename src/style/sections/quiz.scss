@@ -318,8 +318,18 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .tab-pane {
+    height: 1160px;
+  }
+
   .quiz__title {
     font-size: 34px;
+  }
+
+  .quiz__subtitle {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
   }
 
   .quiz-main__title {
