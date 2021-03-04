@@ -10872,6 +10872,9 @@ if ( typeof noGlobal === "undefined" ) {
 return jQuery;
 } );
 
+// Owl
+// ../../node_modules/owl-carousel/owl-carousel/owl-carousel.min.js
+
 // Импортируем Popper
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
@@ -18538,3 +18541,21 @@ function send(event) {
         }
     });
 }
+var owl = $('.owl-carousel');
+
+$(owl).owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})

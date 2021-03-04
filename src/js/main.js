@@ -1,6 +1,9 @@
 // Импортируем jQuery
 //= ../../node_modules/jquery/dist/jquery.js
 
+// Owl
+//= ../../node_modules/owl-carousel/owl-carousel/owl-carousel.min.js
+
 // Импортируем Popper
 //= ../../node_modules/popper.js/dist/umd/popper.js
 
@@ -20,4 +23,5 @@
 
 // Импортируем другие js-файлы
 //= quiz.js
+//= reviews.js
 //= my.js

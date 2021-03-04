@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36024853-15e7-4e1c-b170-017452af0337" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/template/modal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/reviews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/quiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/quiz.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/quiz.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/support.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/support.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/support.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/reviews.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,13 +55,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/js" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/js" />
       <recent name="$PROJECT_DIR$/src/template" />
     </key>
   </component>
@@ -84,7 +82,7 @@
       <workItem from="1614617996249" duration="6447000" />
       <workItem from="1614699272144" duration="3648000" />
       <workItem from="1614782899667" duration="11879000" />
-      <workItem from="1614874528305" duration="13790000" />
+      <workItem from="1614874528305" duration="15091000" />
     </task>
     <task id="LOCAL-00001" summary="header">
       <created>1614281297951</created>
@@ -156,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614875718862</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="more">
+      <created>1614897040559</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614897040562</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +180,7 @@
     <MESSAGE value="support" />
     <MESSAGE value="contacts" />
     <MESSAGE value="update quiz" />
-    <option name="LAST_COMMIT_MESSAGE" value="update quiz" />
+    <MESSAGE value="more" />
+    <option name="LAST_COMMIT_MESSAGE" value="more" />
   </component>
 </project>
