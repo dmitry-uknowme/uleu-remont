@@ -18,6 +18,37 @@
 </head>
 <body>
 
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 9px 9px 9px 9px;border: 1px solid #d3d3d3;">
+            <div style="border: 0; background: none;" class="support-form">
+                <button type="button" class="close position-absolute" style="right: 2rem; top: 1rem; font-size: 28px" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="support-form__title">Мы свяжемся с вами :)</div>
+                <form action="" class="text-center">
+                    <div class="form-group">
+                        <input name="name" class="form-support__control name" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group mb-5">
+                        <input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона">
+                    </div>
+                    <div class="form-group mb-3 support-form__btn">
+                        <button class="btn-default_prgm" type="button" onclick="send(event)">
+                            <span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <div class="support-form__agree">
+                            Заполняя данную форму вы подтверждаете согласие <br>
+                            с нашей политикой обработки персональных данных
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <header class="header">
     <div class="header__container">
         <div class="header_top">
@@ -86,7 +117,7 @@
                 </div>
                 <div class="intro__subtitle">По международным стандартам ISO</div>
                 <div class="intro__btn">
-                    <button class="btn-default_prgm">
+                    <button class="btn-default_prgm" data-toggle="modal" data-target="#modal">
                         <span class="btn-default__text">Вызвать мастера</span>
                     </button>
                 </div>
@@ -132,7 +163,286 @@
         </div>
     </div>
 </section>
-<h1>Квиз</h1>
+<section class="quiz">
+    <div class="quiz__container">
+            <div class="quiz__title">Заставим <span class="color-red">сломанное</span> работать как <span class="color-green">новое</span></div>
+            <div class="quiz__subtitle">Рассчитайте стоимость за 25 секунд</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="quiz-main__container">
+                            <div class="quiz-main">
+                                <div class="quiz-main__questions">
+                                    <div role="presentation" class="quiz-main__question quiz-question active">
+                                        <a data-target="#tab-1" data-toggle="tab">1 <span class="d-none d-xl-inline">вопрос</span></a>
+                                    </div>
+                                    <div role="presentation" class="quiz-main__question quiz-question">
+                                        <a data-target="#tab-2" data-toggle="tab">2 <span class="d-none d-xl-inline">вопрос</span></a>
+                                    </div>
+                                    <div role="presentation" class="quiz-main__question quiz-question">
+                                        <a data-target="#tab-3" data-toggle="tab">3 <span class="d-none d-xl-inline">вопрос</span></a>
+                                    </div>
+                                    <div role="presentation" class="quiz-main__question quiz-question">
+                                        <a data-target="#tab-4" data-toggle="tab">ЧЕК</a>
+                                    </div>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab-1">
+                                        <div class="quiz-main__title">Что нужно <span>починить?</span></div>
+                                        <div class="quiz-main__answers">
+                                            <div class="row">
+                                                <div class="col-xl-8 offset-xl-2">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-6 quiz-answer__container">
+                                                            <div data-answer-1='1' class="quiz-answer active quiz-main__answer">
+                                                                <div class="quiz-answer__img">
+                                                                    <img class="" src="img/quiz-item-1.png" alt="">
+                                                                </div>
+                                                                <div class="quiz-answer__text">
+                                                                    Ремонт <br>
+                                                                    <b>телевизоров</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-6 quiz-answer__container">
+                                                            <div data-answer-1='2' class="quiz-answer quiz-main__answer">
+                                                                <div class="quiz-answer__img">
+                                                                    <img class="" src="img/quiz-item-2.png" alt="">
+                                                                </div>
+                                                                <div class="quiz-answer__text">
+                                                                    Ремонт <br>
+                                                                    <b>стиральной машины</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-6 quiz-answer__container">
+                                                            <div data-answer-1='3' class="quiz-answer quiz-main__answer">
+                                                                <div class="quiz-answer__img">
+                                                                    <img class="" src="img/quiz-item-3.png" alt="">
+                                                                </div>
+                                                                <div class="quiz-answer__text">
+                                                                    Ремонт <br>
+                                                                    <b>аудиотехники</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-6 quiz-answer__container">
+                                                            <div data-answer-1='4' class="quiz-answer quiz-main__answer">
+                                                                <div class="quiz-answer__img">
+                                                                    <img class="" src="img/quiz-item-4.png" alt="">
+                                                                </div>
+                                                                <div class="quiz-answer__text">
+                                                                    Ремонт <br>
+                                                                    <b>ноутбуков</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-6 quiz-answer__container">
+                                                            <div data-answer-1='5' class="quiz-answer quiz-main__answer">
+                                                                <div class="quiz-answer__img">
+                                                                    <img class="" src="img/quiz-item-5.png" alt="">
+                                                                </div>
+                                                                <div class="quiz-answer__text">
+                                                                    Ремонт <br>
+                                                                    <b>автоэлектроника</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-6 quiz-answer__container">
+                                                            <div data-answer-1='6' class="quiz-answer quiz-main__answer">
+                                                                <div class="quiz-answer__img">
+                                                                    <img class="" src="img/quiz-item-6.png" alt="">
+                                                                </div>
+                                                                <div class="quiz-answer__text">
+                                                                    Ремонт <br>
+                                                                    <b>фотоаппаратов</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-6 quiz-answer__container">
+                                                            <div data-answer-1='7' class="quiz-answer quiz-main__answer">
+                                                                <div class="quiz-answer__img">
+                                                                    <img class="" src="img/quiz-item-7.png" alt="">
+                                                                </div>
+                                                                <div class="quiz-answer__text">
+                                                                    Ремонт <br>
+                                                                    <b>мультиварок</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-6 quiz-answer__container">
+                                                            <div data-answer-1='8' class="quiz-answer quiz-main__answer">
+                                                                <div class="quiz-answer__img">
+                                                                    <img class="" src="img/quiz-item-8.png" alt="">
+                                                                </div>
+                                                                <div class="quiz-answer__text">
+                                                                    Ремонт <br>
+                                                                    <b>планшетов <br>
+                                                                        и смартфонов</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-12 quiz-answer__container">
+                                                            <div data-answer-1='9' class="quiz-answer quiz-main__answer">
+                                                                <div class="quiz-answer__img">
+                                                                    <img class="" src="img/quiz-item-9.png" alt="">
+                                                                </div>
+                                                                <div class="quiz-answer__text">
+                                                                    Ремонт <br>
+                                                                    <b>винтажной</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-2">
+                                        <div class="quiz-main__title">Какая у вас <span>степень</span> поломки?</div>
+                                        <div class="quiz-main__answers">
+                                            <div class="row">
+                                                <div class="col-xl-4 quiz-answer-2__container">
+                                                    <div data-answer-2='1' class="quiz-answer-2 active">
+                                                        <div class="quiz-answer-2__text">
+                                                            Работает <br>
+                                                            с перебоями
+                                                        </div>
+                                                        <div class="quiz-answer-2__img">
+                                                            <img src="img/quiz-answer-2-img-1.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 quiz-answer-2__container">
+                                                    <div data-answer-2='2' class="quiz-answer-2">
+                                                        <div class="quiz-answer-2__text">
+                                                            Реставрация <br>
+                                                            изделия
+                                                        </div>
+                                                        <div class="quiz-answer-2__img">
+                                                            <img src="img/quiz-answer-2-img-2.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 quiz-answer-2__container">
+                                                    <div data-answer-2='3' class="quiz-answer-2">
+                                                        <div class="quiz-answer-2__text">
+                                                            Не работает <br>
+                                                            вообще
+                                                        </div>
+                                                        <div class="quiz-answer-2__img">
+                                                            <img src="img/quiz-answer-2-img-3.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="quiz-answer-2__btn">
+                                                <button class="btn-default" id="quiz-answers-2__btn">
+                                                    <span class="btn-default__text">ДАЛЕЕ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-3">
+                                        <div class="quiz-main__title">Как вам будет <span>удобнее?</span></div>
+                                        <div class="quiz-main__answers">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-5 col-md-8 d-flex justify-content-center align-items-center">
+                                                    <div class="quiz-answer-3__container">
+                                                        <div data-answer-3='1' class="quiz-answer-3 active">
+                                                            <div class="quiz-answer-3__img">
+                                                                <img src="img/quiz-answer-3__img-1.png" alt="">
+                                                            </div>
+                                                            <div class="quiz-answer-3__content">
+                                                                <div class="quiz-answer-3__title">офис</div>
+                                                                <div class="quiz-answer-3__description">
+                                                                    Ждем вас в гости!
+                                                                    Вы привозите предмет вышедший из
+                                                                    строя прямо нам в офис :)
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div data-answer-3='2' class="quiz-answer-3">
+                                                            <div class="quiz-answer-3__img">
+                                                                <img src="img/quiz-answer-3__img-2.png" alt="">
+                                                            </div>
+                                                            <div class="quiz-answer-3__content">
+                                                                <div class="quiz-answer-3__title">выезд</div>
+                                                                <div class="quiz-answer-3__description">
+                                                                    Наши специалисты
+                                                                    прибудут по вашему адресу, и проведут
+                                                                    диагностику на месте!
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quiz-answer-2__btn">
+                                                            <button class="btn-default" id="quiz-answers-3__btn">
+                                                                <span class="btn-default__text">ДАЛЕЕ</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-4">
+                                        <div class="check">
+                                            <div class="row">
+                                                <div class="col-xl-11 d-flex justify-content-center">
+                                                    <div class="row">
+                                                        <div class="col-xl-6 d-flex">
+                                                            <div class="check__content">
+                                                                <div class="check__title">
+                                                                    Расчёт будет готов <br>
+                                                                    через  <span>5 минут</span>
+                                                                </div>
+                                                                <div class="check__description">
+                                                                    Оставьте свои данные
+                                                                    для связи, либо
+                                                                    позвоните мастеру
+                                                                    и более подробно
+                                                                    опишите проблему
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-6">
+                                                            <div class="support-form">
+                                                                <div class="support-form__title">Мы свяжемся с вами :)</div>
+                                                                <form action="" class="text-center">
+                                                                    <div class="form-group">
+                                                                        <input name="name" class="form-support__control name" type="text" placeholder="Ваше имя">
+                                                                    </div>
+                                                                    <div class="form-group mb-5">
+                                                                        <input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона">
+                                                                    </div>
+                                                                    <div class="form-group mb-3 support-form__btn">
+                                                                        <button class="btn-default_prgm" type="button" onclick="send(event)">
+                                                                            <span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <div class="support-form__agree">
+                                                                            Заполняя данную форму вы подтверждаете согласие <br>
+                                                                            с нашей политикой обработки персональных данных
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
 <section class="service">
     <div class="service__container">
         <div class="container">
@@ -385,7 +695,7 @@
     <div class="support__container">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-12">
+                <div class="col-xl-5 offset-xl-1 col-12">
                     <div class="support__img-left d-none d-xl-block">
                         <img class="img-fluid" src="img/support__img-left.png" alt="">
                     </div>
@@ -411,13 +721,13 @@
                         <div class="support-form__title">Мы свяжемся с вами :)</div>
                         <form action="" class="text-center">
                             <div class="form-group">
-                                <input name="name" class="form-support__control" type="text" placeholder="Ваше имя">
+                                <input name="name" class="form-support__control name" type="text" placeholder="Ваше имя">
                             </div>
                             <div class="form-group mb-5">
-                                <input name="phone" class="form-support__control" type="tel" placeholder="Номер телефона">
+                                <input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона">
                             </div>
                             <div class="form-group mb-3 support-form__btn">
-                                <button class="btn-default_prgm">
+                                <button class="btn-default_prgm" type="button" onclick="send(event)">
                                     <span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
                                 </button>
                             </div>
@@ -442,7 +752,7 @@
                     <div class="contacts__title">
                         Наши контакты:
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-4">
                         <div class="col-xl-6">
                             <div class="contacts__phone-title">Звоните: </div>
                             <div class="contacts__phone-number">+7 (347) 228-17-10</div>
@@ -450,7 +760,7 @@
                         </div>
                         <div class="col-xl-6 d-flex align-items-end">
                             <div class="contacts__btn">
-                                <button class="btn-default_prgm">
+                                <button class="btn-default_prgm" data-toggle="modal" data-target="#modal">
                                     <span class="btn-default__text">Вызвать мастера</span>
                                 </button>
                             </div>
@@ -471,7 +781,10 @@
                     <div class="row">
                         <div class="d-none d-xl-flex col-xl-6 align-items-end">
                             <div class="contacts__map-inner">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.025499174479!2d55.989891699999994!3d54.726766299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d93a33c548002b%3A0x1f04c12c7a0c9755!2z0J7QntCeICLQn9Cg0J7RgNC10LzQvtC90YIg0KPRhNCwIg!5e0!3m2!1sru!2sru!4v1614506797390!5m2!1sru!2sru" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<!--                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.025499174479!2d55.989891699999994!3d54.726766299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d93a33c548002b%3A0x1f04c12c7a0c9755!2z0J7QntCeICLQn9Cg0J7RgNC10LzQvtC90YIg0KPRhNCwIg!5e0!3m2!1sru!2sru!4v1614506797390!5m2!1sru!2sru" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+                                <a style="display: block" href="https://yandex.ru/maps/-/CCUQF4CQhD" target="_blank">
+                                    <img style="height: 100%; width: fit-content" src="img/map.webp" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-6 pl-xl-0">

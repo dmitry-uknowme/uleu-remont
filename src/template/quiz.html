@@ -29,7 +29,7 @@
                                                 <div class="col-xl-8 offset-xl-2">
                                                     <div class="row">
                                                         <div class="col-xl-4 col-6 quiz-answer__container">
-                                                            <div class="quiz-answer quiz-main__answer">
+                                                            <div data-answer-1='1' class="quiz-answer active quiz-main__answer">
                                                                 <div class="quiz-answer__img">
                                                                     <img class="" src="img/quiz-item-1.png" alt="">
                                                                 </div>
@@ -40,7 +40,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-4 col-6 quiz-answer__container">
-                                                            <div class="quiz-answer quiz-main__answer">
+                                                            <div data-answer-1='2' class="quiz-answer quiz-main__answer">
                                                                 <div class="quiz-answer__img">
                                                                     <img class="" src="img/quiz-item-2.png" alt="">
                                                                 </div>
@@ -51,7 +51,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-4 col-6 quiz-answer__container">
-                                                            <div class="quiz-answer quiz-main__answer">
+                                                            <div data-answer-1='3' class="quiz-answer quiz-main__answer">
                                                                 <div class="quiz-answer__img">
                                                                     <img class="" src="img/quiz-item-3.png" alt="">
                                                                 </div>
@@ -62,7 +62,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-4 col-6 quiz-answer__container">
-                                                            <div class="quiz-answer quiz-main__answer">
+                                                            <div data-answer-1='4' class="quiz-answer quiz-main__answer">
                                                                 <div class="quiz-answer__img">
                                                                     <img class="" src="img/quiz-item-4.png" alt="">
                                                                 </div>
@@ -73,7 +73,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-4 col-6 quiz-answer__container">
-                                                            <div class="quiz-answer quiz-main__answer">
+                                                            <div data-answer-1='5' class="quiz-answer quiz-main__answer">
                                                                 <div class="quiz-answer__img">
                                                                     <img class="" src="img/quiz-item-5.png" alt="">
                                                                 </div>
@@ -84,7 +84,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-4 col-6 quiz-answer__container">
-                                                            <div class="quiz-answer quiz-main__answer">
+                                                            <div data-answer-1='6' class="quiz-answer quiz-main__answer">
                                                                 <div class="quiz-answer__img">
                                                                     <img class="" src="img/quiz-item-6.png" alt="">
                                                                 </div>
@@ -95,7 +95,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-4 col-6 quiz-answer__container">
-                                                            <div class="quiz-answer quiz-main__answer">
+                                                            <div data-answer-1='7' class="quiz-answer quiz-main__answer">
                                                                 <div class="quiz-answer__img">
                                                                     <img class="" src="img/quiz-item-7.png" alt="">
                                                                 </div>
@@ -106,7 +106,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-4 col-6 quiz-answer__container">
-                                                            <div class="quiz-answer quiz-main__answer">
+                                                            <div data-answer-1='8' class="quiz-answer quiz-main__answer">
                                                                 <div class="quiz-answer__img">
                                                                     <img class="" src="img/quiz-item-8.png" alt="">
                                                                 </div>
@@ -118,7 +118,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-4 col-12 quiz-answer__container">
-                                                            <div class="quiz-answer quiz-main__answer">
+                                                            <div data-answer-1='9' class="quiz-answer quiz-main__answer">
                                                                 <div class="quiz-answer__img">
                                                                     <img class="" src="img/quiz-item-9.png" alt="">
                                                                 </div>
@@ -138,7 +138,7 @@
                                         <div class="quiz-main__answers">
                                             <div class="row">
                                                 <div class="col-xl-4 quiz-answer-2__container">
-                                                    <div class="quiz-answer-2">
+                                                    <div data-answer-2='1' class="quiz-answer-2 active">
                                                         <div class="quiz-answer-2__text">
                                                             Работает <br>
                                                             с перебоями
@@ -149,7 +149,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 quiz-answer-2__container">
-                                                    <div class="quiz-answer-2">
+                                                    <div data-answer-2='2' class="quiz-answer-2">
                                                         <div class="quiz-answer-2__text">
                                                             Реставрация <br>
                                                             изделия
@@ -160,7 +160,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 quiz-answer-2__container">
-                                                    <div class="quiz-answer-2">
+                                                    <div data-answer-2='3' class="quiz-answer-2">
                                                         <div class="quiz-answer-2__text">
                                                             Не работает <br>
                                                             вообще
@@ -172,7 +172,7 @@
                                                 </div>
                                             </div>
                                             <div class="quiz-answer-2__btn">
-                                                <button class="btn-default">
+                                                <button class="btn-default" id="quiz-answers-2__btn">
                                                     <span class="btn-default__text">ДАЛЕЕ</span>
                                                 </button>
                                             </div>
@@ -180,9 +180,94 @@
                                     </div>
                                     <div class="tab-pane" id="tab-3">
                                         <div class="quiz-main__title">Как вам будет <span>удобнее?</span></div>
+                                        <div class="quiz-main__answers">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-5 col-md-8 d-flex justify-content-center align-items-center">
+                                                    <div class="quiz-answer-3__container">
+                                                        <div data-answer-3='1' class="quiz-answer-3 active">
+                                                            <div class="quiz-answer-3__img">
+                                                                <img src="img/quiz-answer-3__img-1.png" alt="">
+                                                            </div>
+                                                            <div class="quiz-answer-3__content">
+                                                                <div class="quiz-answer-3__title">офис</div>
+                                                                <div class="quiz-answer-3__description">
+                                                                    Ждем вас в гости!
+                                                                    Вы привозите предмет вышедший из
+                                                                    строя прямо нам в офис :)
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div data-answer-3='2' class="quiz-answer-3">
+                                                            <div class="quiz-answer-3__img">
+                                                                <img src="img/quiz-answer-3__img-2.png" alt="">
+                                                            </div>
+                                                            <div class="quiz-answer-3__content">
+                                                                <div class="quiz-answer-3__title">выезд</div>
+                                                                <div class="quiz-answer-3__description">
+                                                                    Наши специалисты
+                                                                    прибудут по вашему адресу, и проведут
+                                                                    диагностику на месте!
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quiz-answer-2__btn">
+                                                            <button class="btn-default" id="quiz-answers-3__btn">
+                                                                <span class="btn-default__text">ДАЛЕЕ</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="tab-pane" id="tab-4">
-                                        <h1>A</h1>
+                                        <div class="check">
+                                            <div class="row">
+                                                <div class="col-xl-11 d-flex justify-content-center">
+                                                    <div class="row">
+                                                        <div class="col-xl-6 d-flex">
+                                                            <div class="check__content">
+                                                                <div class="check__title">
+                                                                    Расчёт будет готов <br>
+                                                                    через  <span>5 минут</span>
+                                                                </div>
+                                                                <div class="check__description">
+                                                                    Оставьте свои данные
+                                                                    для связи, либо
+                                                                    позвоните мастеру
+                                                                    и более подробно
+                                                                    опишите проблему
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-6">
+                                                            <div class="support-form">
+                                                                <div class="support-form__title">Мы свяжемся с вами :)</div>
+                                                                <form action="" class="text-center">
+                                                                    <div class="form-group">
+                                                                        <input name="name" class="form-support__control name" type="text" placeholder="Ваше имя">
+                                                                    </div>
+                                                                    <div class="form-group mb-5">
+                                                                        <input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона">
+                                                                    </div>
+                                                                    <div class="form-group mb-3 support-form__btn">
+                                                                        <button class="btn-default_prgm" type="button" onclick="send(event)">
+                                                                            <span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <div class="support-form__agree">
+                                                                            Заполняя данную форму вы подтверждаете согласие <br>
+                                                                            с нашей политикой обработки персональных данных
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -192,5 +277,4 @@
                     </div>
                 </div>
             </div>
-    </div>
 </section>
