@@ -19,4 +19,5 @@
 //= ../../node_modules/bootstrap/js/dist/toast.js
 
 // Импортируем другие js-файлы
+//= quiz.js
 //= my.js

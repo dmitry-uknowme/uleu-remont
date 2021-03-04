@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36024853-15e7-4e1c-b170-017452af0337" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/style/sections/quiz.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/sections/quiz.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/quiz.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/quiz.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +26,7 @@
       <list>
         <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,6 +77,8 @@
       <workItem from="1614505877395" duration="5793000" />
       <workItem from="1614617996249" duration="6447000" />
       <workItem from="1614699272144" duration="3648000" />
+      <workItem from="1614782899667" duration="11879000" />
+      <workItem from="1614874528305" duration="1176000" />
     </task>
     <task id="LOCAL-00001" summary="header">
       <created>1614281297951</created>
