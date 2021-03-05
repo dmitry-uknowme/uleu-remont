@@ -4,69 +4,9 @@
     <list default="true" id="36024853-15e7-4e1c-b170-017452af0337" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/contacts__background.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/contacts__background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/contacts__settings.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/contacts__settings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/feedback/feedback__call.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/feedback/feedback__call.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header__calc.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header__calc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header__mail.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header__mail.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header__man.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header__man.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header__peregor.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header__peregor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header__repair.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header__repair.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__call.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__call.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__inst1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__inst1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__inst2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__inst2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro__check-mark.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro__check-mark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro__img.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro__img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro__star.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro__star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro__verified.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro__verified.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/parallelogram.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/parallelogram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems-item-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems-item-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems-item-1_new.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems-item-1_new.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems-item-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems-item-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems-item-2_new.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems-item-2_new.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems-item-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems-item-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems-item-3_new.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems-item-3_new.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems-item-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems-item-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems-item-4_new.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems-item-4_new.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-answer-2-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-answer-2-img-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-answer-2-img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-answer-2-img-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-answer-2-img-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-answer-2-img-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-item-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-item-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-item-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-item-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-item-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-item-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-item-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-item-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-item-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-item-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-item-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-item-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-item-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-item-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-item-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-item-8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz-item-9.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz-item-9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__man.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__man.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__timer.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__timer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/review-star.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/review-star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/reviews__img.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/reviews__img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/scheme-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/scheme-img-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/scheme-img-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/scheme-img-right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service-background.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service-background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service-item-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service-item-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service-item-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service-item-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service-item-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service-item-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service-item-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service-item-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service-item-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service-item-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service-item-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service-item-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/support__img-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/support__img-left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/support__img-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/support__img-right.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/quiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/sections/intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/intro.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/sections/quiz.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/quiz.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/intro.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614898347461</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="quiz fix (секундомер)">
+      <created>1614953082410</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614953082410</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +196,7 @@
     <MESSAGE value="contacts" />
     <MESSAGE value="update quiz" />
     <MESSAGE value="more" />
-    <option name="LAST_COMMIT_MESSAGE" value="more" />
+    <MESSAGE value="quiz fix (секундомер)" />
+    <option name="LAST_COMMIT_MESSAGE" value="quiz fix (секундомер)" />
   </component>
 </project>

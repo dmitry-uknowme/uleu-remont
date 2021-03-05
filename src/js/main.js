@@ -24,4 +24,5 @@
 // Импортируем другие js-файлы
 //= quiz.js
 //= reviews.js
+//= animations.js
 //= my.js

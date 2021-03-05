@@ -8146,7 +8146,7 @@ body {
       position: absolute;
       bottom: -131%;
       right: 0%;
-      background: url(../../img/intro/intro__goto.png) center no-repeat;
+      background: url("../img/intro/intro__goto.png") center no-repeat;
       height: 170px;
       width: 170px; }
     .intro .intro__title .intro__title_red {
@@ -8211,31 +8211,35 @@ body {
         text-transform: uppercase; }
   .intro .intro__phone {
     position: relative; }
-    .intro .intro__phone img {
+    .intro .intro__phone img.img-fluid {
       height: 590px;
       width: 330px; }
-    .intro .intro__phone::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      top: 18%;
-      left: -11%;
-      width: 90px;
-      height: 90px;
-      background: url(../../img/intro/intro__inst2.png);
-      background-repeat: no-repeat; }
-    .intro .intro__phone::after {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      bottom: 29%;
-      right: -3%;
-      width: 104px;
-      height: 104px;
-      background: url(../../img/intro/intro__inst1.png);
-      background-repeat: no-repeat; }
-  .intro .intro__inst1 {
-    position: absolute; }
+  .intro .intro__inst-1 {
+    position: absolute;
+    z-index: 1;
+    width: 104px;
+    height: 104px;
+    transition: all 0.9s; }
+  .intro .intro__inst-1._unactive {
+    position: absolute;
+    z-index: 1;
+    bottom: 29%;
+    right: -3%;
+    width: 104px;
+    height: 104px; }
+  .intro .intro__inst-2 {
+    position: absolute;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    transition: all 0.9s; }
+  .intro .intro__inst-2._unactive {
+    position: absolute;
+    z-index: -1;
+    top: 18%;
+    left: -11%;
+    width: 90px;
+    height: 90px; }
 
 @media screen and (max-width: 1199px) {
   .intro .intro__title {
@@ -8267,7 +8271,7 @@ body {
       text-align: center; } }
 
 .quiz {
-  background: url(../../img/quiz/quiz__bg.png);
+  background: url("../img/quiz/quiz__bg.png");
   padding-bottom: 3rem; }
 
 .quiz__title {

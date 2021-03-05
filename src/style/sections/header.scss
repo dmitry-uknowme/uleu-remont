@@ -51,7 +51,6 @@
 		box-shadow: 0 35px 51px rgba(0, 0, 0, 0.1);
 	}
 
-
 	& .header__items_bottom {
 		display: flex;
 		padding: 25px 0;
@@ -68,32 +67,32 @@
 			text-transform: uppercase;
 		}
 		& .header__text-medium {
-		  white-space: nowrap;
-		  font-family: $font-medium;
-		  color: $black;
-		  font-size: 12px;
+			white-space: nowrap;
+			font-family: $font-medium;
+			color: $black;
+			font-size: 12px;
 		}
 		& .header__text-bold {
-		  text-transform: uppercase;
-		  white-space: nowrap;
-		  font-family: $font-bold;
-		  color: $black;
-		  font-size: 15px;
+			text-transform: uppercase;
+			white-space: nowrap;
+			font-family: $font-bold;
+			color: $black;
+			font-size: 15px;
 		}
 		& .header__phone-text {
-		  text-transform: uppercase;
-		  font-family: $font-medium;
-		  color: $black;
-		  font-size: 10px;
-		  & a {
+			text-transform: uppercase;
+			font-family: $font-medium;
 			color: $black;
-		  }
+			font-size: 10px;
+			& a {
+				color: $black;
+			}
 		}
 		& .header__phone-number a {
-		  color: #fe0000;
-		  text-transform: uppercase;
-		  font-family: $font-bold;
-		  font-size: 15px;
+			color: #fe0000;
+			text-transform: uppercase;
+			font-family: $font-bold;
+			font-size: 15px;
 		}
 	}
 }
