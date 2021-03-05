@@ -18426,24 +18426,50 @@ return Popper;
 //# sourceMappingURL=toast.js.map
 
 // Импортируем другие js-файлы
-let questions = $('.quiz-main__question');
+console.log('hi');
 
-questions.click(function(event) {
-    let el = $(event.currentTarget);
+const renderHTML = (id, img, text) => `<div class=\"col-xl-4 col-6 quiz-answer${id !== 0 ? `-${id + 1}` : ''}__container\">
+                                        <div class=\"quiz-answer quiz-${id !== 0 ? 'answer' : 'main__answer'}${id !== 0 ? `-${id + 1}` : ''}\">
+                                            <div class="quiz-answer${id !== 0 ? `-${id + 1}` : ''}__img">
+                                                <img class="" src=${img}>
+                                            </div>
+                                            <div class=\"quiz-answer${id !== 0 ? `-${id + 1}` : ''}__text\">
+                                                ${text}
+                                            </div>
+                                        </div>
+                                    </div>`;
 
-    if (el.hasClass('active')) {
+const quizData = [
+	{
+		text: [
+			'РЕМОНТ ТЕЛЕВИЗОРОВ',
+			'РЕМОНТ СТИРАЛЬНОЙ МАШИНЫ',
+			'РЕМОНТ АУДИОТЕХНИКИ',
+			'РЕМОНТ НОУТБУКОВ',
+			'РЕМОНТ АВТОЭЛЕКТРОНИКИ',
+			'РЕМОНТ ФОТОАППАРАТОВ',
+			'РЕМОНТ МУЛЬТИВАРОК',
+			'РЕМОНТ ПЛАНШЕТОВ И СМАРТФОНОВ',
+			'РЕМОНТ ВИНТАЖНОЙ',
+		],
+	},
+	{
+		text: ['РАБОТАЕТ С ПЕРЕБОЯМИ', 'РЕСТАВРАЦИЯ ИЗДЕЛИЯ', 'НЕ РАБОТАЕТ ВООБЩЕ'],
+	},
+];
 
-    } else {
-        for (let i = 0; i < questions.length; i++) {
-            if ($(questions[i]).hasClass('active')) {
-                $(questions[i]).removeClass('active');
-            }
+// console.log(quizData.length);
+let html = '';
+for (let i = 0; i < quizData.length; i++) {
+	console.log(`answers ${i}`);
+	for (let j = 0; j < quizData[i].text.length; j++) {
+		console.log(renderHTML(i, quizData[i].text[j], quizData[i].text[j]);)
 
-            if ($(questions[i]).find('a').hasClass('active')) {
-                $(questions[i]).find('a').removeClass('active');
-            }
-        }
+		html += renderHTML(i, quizData[i].text[j], quizData[i].text[j]);
+	}
+}
+console.log(html);
 
-        el.addClass('active');
-    }
-})
+document.body.insertAdjacentHTML('afterbegin', html);
+
+console.log('bye');
