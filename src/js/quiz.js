@@ -103,13 +103,16 @@ const timer = () => {
 			document.querySelector('.quiz__timer-value').innerHTML = timerValue;
 		}, 1000);
 	};
-	if (!isRunning) {
-		allAnswers.forEach((answer) => {
-			answer.addEventListener('mouseover', () => {
+
+	allAnswers.forEach((answer) => {
+		answer.addEventListener('mouseover', () => {
+			if (!isRunning) {
+				isRunning = true;
 				runTimer();
-			});
+			}
 		});
-	}
+	});
+
 	return false;
 };
 
