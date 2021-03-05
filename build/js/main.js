@@ -21892,9 +21892,9 @@ let answers3 = $('.quiz-answer-3');
 let btn1 = $('#quiz-answers-2__btn');
 let btn2 = $('#quiz-answers-3__btn');
 
-let d1 = 1;
-let d2 = 1;
-let d3 = 1;
+let d1 = 'Неизвестно';
+let d2 = 'Неизвестно';
+let d3 = 'Неизвестно';
 
 btn1.click(function () {
     $(questions[2]).find('a').click();
@@ -21978,12 +21978,14 @@ function send(event) {
     let name = form.find('.name').val();
     let phone = form.find('.phone').val();
 
+    let data = {form: {name: name, phone: phone}, quiz: {answer1: d1, answer2: d2, answer3: d3}}
+
     //console.log({form: {name: name, phone: phone}, quiz: {answer1: d1, answer2: d2, answer3: d3}})
 
     $.ajax({
         url: "server/mail.php",
         type: "POST",
-        data: {form: {name: name, phone: phone}, quiz: {answer1: d1, answer2: d2, answer3: d3}},
+        data: data,
         success: function(msg){
             console.log(msg);
             alert("Заявка принята")
@@ -21991,6 +21993,7 @@ function send(event) {
             // $("#exampleModal .modal-success").css('opacity', 1);
         },
         error: function () {
+            console.log(data)
             alert("Ошибка отправки заявки, попробуйте позднее.")
         }
     });
