@@ -8095,6 +8095,8 @@ body {
     -ms-flex-pack: center;
         justify-content: center; }
     .header .header__items_bottom .header__item {
+      cursor: pointer;
+      position: relative;
       padding: 0 10px;
       font-family: "Montserrat Medium", sans-serif;
       font-size: 10px;
@@ -8104,6 +8106,19 @@ body {
       line-height: 12.16px;
       text-align: left;
       text-transform: uppercase; }
+    .header .header__items_bottom .header__item:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 2px;
+      background: red;
+      opacity: 0;
+      width: 0;
+      transition: all 0.5s; }
+    .header .header__items_bottom .header__item:hover:after {
+      opacity: 1;
+      width: 100%; }
     .header .header__items_bottom .header__text-medium {
       white-space: nowrap;
       font-family: "Montserrat Medium", sans-serif;
