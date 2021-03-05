@@ -1,47 +1,98 @@
-console.log('hi');
+let questions = $('.quiz-main__question');
+let answers1 = $('.quiz-answer');
+let answers2 = $('.quiz-answer-2');
+let answers3 = $('.quiz-answer-3');
+let btn1 = $('#quiz-answers-2__btn');
+let btn2 = $('#quiz-answers-3__btn');
 
-const renderHTML = (id, img, text) => `<div class=\"col-xl-4 col-6 quiz-answer${id !== 0 ? `-${id + 1}` : ''}__container\">
-                                        <div class=\"quiz-answer quiz-${id !== 0 ? 'answer' : 'main__answer'}${id !== 0 ? `-${id + 1}` : ''}\">
-                                            <div class="quiz-answer${id !== 0 ? `-${id + 1}` : ''}__img">
-                                                <img class="" src=${img}>
-                                            </div>
-                                            <div class=\"quiz-answer${id !== 0 ? `-${id + 1}` : ''}__text\">
-                                                ${text}
-                                            </div>
-                                        </div>
-                                    </div>`;
+let d1 = 1;
+let d2 = 1;
+let d3 = 1;
 
-const quizData = [
-	{
-		text: [
-			'РЕМОНТ ТЕЛЕВИЗОРОВ',
-			'РЕМОНТ СТИРАЛЬНОЙ МАШИНЫ',
-			'РЕМОНТ АУДИОТЕХНИКИ',
-			'РЕМОНТ НОУТБУКОВ',
-			'РЕМОНТ АВТОЭЛЕКТРОНИКИ',
-			'РЕМОНТ ФОТОАППАРАТОВ',
-			'РЕМОНТ МУЛЬТИВАРОК',
-			'РЕМОНТ ПЛАНШЕТОВ И СМАРТФОНОВ',
-			'РЕМОНТ ВИНТАЖНОЙ',
-		],
-	},
-	{
-		text: ['РАБОТАЕТ С ПЕРЕБОЯМИ', 'РЕСТАВРАЦИЯ ИЗДЕЛИЯ', 'НЕ РАБОТАЕТ ВООБЩЕ'],
-	},
-];
+btn1.click(function () {
+    $(questions[2]).find('a').click();
+})
 
-// console.log(quizData.length);
-let html = '';
-for (let i = 0; i < quizData.length; i++) {
-	console.log(`answers ${i}`);
-	for (let j = 0; j < quizData[i].text.length; j++) {
-		// console.log(renderHTML(i, quizData[i].text[j], quizData[i].text[j]));
+btn2.click(function () {
+    $(questions[3]).find('a').click();
+})
 
-		html += renderHTML(i, quizData[i].text[j], quizData[i].text[j]);
-	}
+
+        el.addClass('active');
+    }
+})
+
+
+
+answers1.click(function (event) {
+    let el = $(event.currentTarget);
+
+    for (let i = 0; i < answers1.length; i++) {
+        if ($(answers1[i]).hasClass('active')) {
+            $(answers1[i]).removeClass('active');
+        }
+    }
+
+    el.addClass('active');
+
+    d1 = el.data('answer-1');
+
+    $(questions[1]).find('a').click();
+})
+
+answers2.click(function (event) {
+    let el = $(event.currentTarget);
+
+    for (let i = 0; i < answers2.length; i++) {
+        if ($(answers2[i]).hasClass('active')) {
+            $(answers2[i]).removeClass('active');
+        }
+    }
+
+    el.addClass('active');
+
+    d2 = el.data('answer-2');
+
+    $(questions[2]).find('a').click();
+})
+
+answers3.click(function (event) {
+    let el = $(event.currentTarget);
+
+    for (let i = 0; i < answers3.length; i++) {
+        if ($(answers3[i]).hasClass('active')) {
+            $(answers3[i]).removeClass('active');
+        }
+    }
+
+    el.addClass('active');
+
+    d3 = el.data('answer-3');
+
+    $(questions[3]).find('a').click();
+})
+
+function send(event) {
+    let form = $(event.target).parents('form');
+
+    let name = form.find('.name').val();
+    let phone = form.find('.phone').val();
+
+    //console.log({form: {name: name, phone: phone}, quiz: {answer1: d1, answer2: d2, answer3: d3}})
+
+    $.ajax({
+        url: "server/mail.php",
+        type: "POST",
+        data: {form: {name: name, phone: phone}, quiz: {answer1: d1, answer2: d2, answer3: d3}},
+        success: function(msg){
+            console.log(msg);
+            alert("Заявка принята")
+            // $("#exampleModal .modal-info").css('opacity', 0);
+            // $("#exampleModal .modal-success").css('opacity', 1);
+        },
+        error: function () {
+            alert("Ошибка отправки заявки, попробуйте позднее.")
+        }
+    });
 }
-console.log(html);
 
-document.body.insertAdjacentHTML('afterbegin', html);
-
-console.log('bye');
