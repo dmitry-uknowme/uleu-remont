@@ -1,5 +1,5 @@
 .intro {
-	height: 90vh;
+	//height: 90vh;
 	// background: url(../img//intro/intro__bg.png);
 	margin-bottom: 3rem;
 
@@ -78,8 +78,10 @@
 
 		& .intro__item {
 			width: 120px;
-			background: #eee;
-			border-radius: 20px 20px 95px 49px;
+
+			// TODO: Создать контейнер, т.к. на мобилках ширина 100% у 3-го блока
+			//background: #eee;
+			//border-radius: 20px 20px 95px 49px;
 			height: 120px;
 			padding: 1rem;
 			box-sizing: content-box;

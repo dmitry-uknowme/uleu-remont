@@ -8077,13 +8077,15 @@ body {
       color: #000000;
       font-size: 10px; }
       .header .header__items_top .header__phone-text a {
-        color: #000000; }
-    .header .header__items_top .header__phone-number a {
+        color: black; }
+    .header .header__items_top .header__phone-number {
       color: #fe0000;
       text-transform: uppercase;
       font-family: "Montserrat Bold", sans-serif;
       font-size: 15px;
       font-weight: 700; }
+      .header .header__items_top .header__phone-number a {
+        color: #fe0000; }
   .header .header_bottom {
     box-shadow: 0 35px 51px rgba(0, 0, 0, 0.1); }
   .header .header__items_bottom {
@@ -8094,7 +8096,6 @@ body {
         justify-content: center; }
     .header .header__items_bottom .header__item {
       padding: 0 10px;
-      color: var(--black);
       font-family: "Montserrat Medium", sans-serif;
       font-size: 10px;
       font-weight: 500;
@@ -8103,9 +8104,31 @@ body {
       line-height: 12.16px;
       text-align: left;
       text-transform: uppercase; }
+    .header .header__items_bottom .header__text-medium {
+      white-space: nowrap;
+      font-family: "Montserrat Medium", sans-serif;
+      color: #000000;
+      font-size: 12px; }
+    .header .header__items_bottom .header__text-bold {
+      text-transform: uppercase;
+      white-space: nowrap;
+      font-family: "Montserrat Bold", sans-serif;
+      color: #000000;
+      font-size: 15px; }
+    .header .header__items_bottom .header__phone-text {
+      text-transform: uppercase;
+      font-family: "Montserrat Medium", sans-serif;
+      color: #000000;
+      font-size: 10px; }
+      .header .header__items_bottom .header__phone-text a {
+        color: #000000; }
+    .header .header__items_bottom .header__phone-number a {
+      color: #fe0000;
+      text-transform: uppercase;
+      font-family: "Montserrat Bold", sans-serif;
+      font-size: 15px; }
 
 .intro {
-  height: 90vh;
   margin-bottom: 3rem; }
   .intro .intro__title {
     margin-top: 60px;
@@ -8169,8 +8192,6 @@ body {
         justify-content: space-between; }
     .intro .intro__items .intro__item {
       width: 120px;
-      background: #eee;
-      border-radius: 20px 20px 95px 49px;
       height: 120px;
       padding: 1rem;
       box-sizing: content-box; }
@@ -8246,7 +8267,8 @@ body {
       text-align: center; } }
 
 .quiz {
-  background: url(../../img/quiz/quiz__bg.png); }
+  background: url(../../img/quiz/quiz__bg.png);
+  padding-bottom: 3rem; }
 
 .quiz__title {
   margin-bottom: 1rem;
@@ -8346,6 +8368,7 @@ body {
       justify-content: center; }
 
 .quiz-answer {
+  margin-bottom: 2rem;
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -8400,6 +8423,16 @@ body {
   color: #ffffff; }
 
 .quiz-answer-2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #000000;
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -8411,12 +8444,9 @@ body {
   user-select: none;
   /* Non-prefixed version, currently */
   cursor: pointer;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   margin-bottom: 1rem;
   border-radius: 10px;
@@ -8541,19 +8571,32 @@ body {
   text-align: right; }
 
 @media screen and (max-width: 1199px) {
+  .quiz__title {
+    font-size: 34px; }
+  .quiz__subtitle::after {
+    right: 23%; }
+  .quiz-main__title {
+    font-size: 34px; }
+  .quiz-answer__img {
+    width: 110px;
+    height: 110px; }
+    .quiz-answer__img img {
+      width: inherit; }
+  .quiz-answer__text {
+    font-size: 15px; }
+  .quiz-answer-2 {
+    margin: 0 auto 1rem;
+    padding-left: 20px;
+    padding-rigth: 20px;
+    width: 290px; }
   .tab-pane {
     height: 1160px; }
   .quiz__title {
     font-size: 34px; }
-
-  .quiz__subtitle::after {
-    right: 23%; }
-
   .quiz__subtitle {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 18px; }
-
   .quiz-main__title {
     font-size: 34px; }
   .quiz-answer__img {

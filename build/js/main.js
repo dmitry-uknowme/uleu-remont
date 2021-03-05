@@ -21885,7 +21885,6 @@ return Popper;
 //# sourceMappingURL=toast.js.map
 
 // Импортируем другие js-файлы
-
 let questions = $('.quiz-main__question');
 let answers1 = $('.quiz-answer');
 let answers2 = $('.quiz-answer-2');
@@ -21908,11 +21907,22 @@ btn2.click(function () {
 questions.click(function(event) {
     let el = $(event.currentTarget);
 
+    if (el.hasClass('active')) {
+
+    } else {
+        for (let i = 0; i < questions.length; i++) {
+            if ($(questions[i]).hasClass('active')) {
+                $(questions[i]).removeClass('active');
+            }
+
+            if ($(questions[i]).find('a').hasClass('active')) {
+                $(questions[i]).find('a').removeClass('active');
+            }
+        }
+
         el.addClass('active');
     }
 })
-
-
 
 answers1.click(function (event) {
     let el = $(event.currentTarget);
@@ -22007,4 +22017,3 @@ $(owl).owlCarousel({
 $('.reviews-btn__next').click(function () {
     owl.trigger('next.owl.carousel');
 })
-

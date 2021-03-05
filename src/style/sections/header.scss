@@ -31,6 +31,9 @@
 			font-family: $font-medium;
 			color: $black;
 			font-size: 10px;
+			& a {
+				color: black;
+			}
 		}
 		& .header__phone-number {
 			color: #fe0000;
@@ -38,6 +41,9 @@
 			font-family: $font-bold;
 			font-size: 15px;
 			font-weight: 700;
+			& a {
+				color: #fe0000;
+			}
 		}
 	}
 
@@ -52,39 +58,6 @@
 		justify-content: center;
 		& .header__item {
 			padding: 0 10px;
-
-    }
-    & .header__text-medium {
-      white-space: nowrap;
-      font-family: $font-medium;
-      color: $black;
-      font-size: 12px;
-    }
-    & .header__text-bold {
-      text-transform: uppercase;
-      white-space: nowrap;
-      font-family: $font-bold;
-      color: $black;
-      font-size: 15px;
-    }
-    & .header__phone-text {
-      text-transform: uppercase;
-      font-family: $font-medium;
-      color: $black;
-      font-size: 10px;
-      & a {
-        color: $black;
-      }
-    }
-    & .header__phone-number a {
-      color: #fe0000;
-      text-transform: uppercase;
-      font-family: $font-bold;
-      font-size: 15px;
-    }
-  }
-
-			color: var(--black);
 			font-family: $font-medium;
 			font-size: 10px;
 			font-weight: 500;
@@ -93,6 +66,34 @@
 			line-height: 12.16px;
 			text-align: left;
 			text-transform: uppercase;
+		}
+		& .header__text-medium {
+		  white-space: nowrap;
+		  font-family: $font-medium;
+		  color: $black;
+		  font-size: 12px;
+		}
+		& .header__text-bold {
+		  text-transform: uppercase;
+		  white-space: nowrap;
+		  font-family: $font-bold;
+		  color: $black;
+		  font-size: 15px;
+		}
+		& .header__phone-text {
+		  text-transform: uppercase;
+		  font-family: $font-medium;
+		  color: $black;
+		  font-size: 10px;
+		  & a {
+			color: $black;
+		  }
+		}
+		& .header__phone-number a {
+		  color: #fe0000;
+		  text-transform: uppercase;
+		  font-family: $font-bold;
+		  font-size: 15px;
 		}
 	}
 }
