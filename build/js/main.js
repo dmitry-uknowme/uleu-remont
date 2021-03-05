@@ -21924,8 +21924,6 @@ questions.click(function(event) {
     }
 })
 
-
-
 answers1.click(function (event) {
     let el = $(event.currentTarget);
 
