@@ -8146,7 +8146,7 @@ body {
       position: absolute;
       bottom: -131%;
       right: 0%;
-      background: url(../../img/intro/intro__goto.png) center no-repeat;
+      background: url("../img/intro/intro__goto.png") center no-repeat;
       height: 170px;
       width: 170px; }
     .intro .intro__title .intro__title_red {
@@ -8222,7 +8222,7 @@ body {
       left: -11%;
       width: 90px;
       height: 90px;
-      background: url(../../img/intro/intro__inst2.png);
+      background: url("../img/intro/intro__inst2.png");
       background-repeat: no-repeat; }
     .intro .intro__phone::after {
       content: '';
@@ -8232,7 +8232,7 @@ body {
       right: -3%;
       width: 104px;
       height: 104px;
-      background: url(../../img/intro/intro__inst1.png);
+      background: url("../img/intro/intro__inst1.png");
       background-repeat: no-repeat; }
   .intro .intro__inst1 {
     position: absolute; }
@@ -8267,7 +8267,7 @@ body {
       text-align: center; } }
 
 .quiz {
-  background: url(../../img/quiz/quiz__bg.png);
+  background: url("../img/quiz/quiz__bg.png");
   padding-bottom: 3rem; }
 
 .quiz__title {

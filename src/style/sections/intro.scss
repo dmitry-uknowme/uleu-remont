@@ -19,7 +19,7 @@
 			position: absolute;
 			bottom: -131%;
 			right: 0%;
-			background: url(../../img/intro/intro__goto.png) center no-repeat;
+			background: url('../img/intro/intro__goto.png') center no-repeat;
 			height: 170px;
 			width: 170px;
 		}
@@ -128,7 +128,7 @@
 			left: -11%;
 			width: 90px;
 			height: 90px;
-			background: url(../../img/intro/intro__inst2.png);
+			background: url("../img/intro/intro__inst2.png");
 			background-repeat: no-repeat;
 		}
 
@@ -140,7 +140,7 @@
 			right: -3%;
 			width: 104px;
 			height: 104px;
-			background: url(../../img/intro/intro__inst1.png);
+			background: url('../img/intro/intro__inst1.png');
 			background-repeat: no-repeat;
 		}
 	}
