@@ -8298,14 +8298,6 @@ body {
   line-height: 23.01px;
   text-align: center;
   text-transform: uppercase; }
-  .quiz__subtitle::after {
-    content: '';
-    position: absolute;
-    top: -2%;
-    right: 32%;
-    background: url(../../img/quiz/quiz__timer.png) no-repeat;
-    height: 30px;
-    width: 30px; }
 
 .quiz-main__questions {
   display: -ms-flexbox;

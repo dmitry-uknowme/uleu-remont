@@ -39,13 +39,14 @@
 	text-align: center;
 	text-transform: uppercase;
 	&::after {
-		content: '';
-		position: absolute;
-		top: -2%;
-		right: 32%;
-		background: url(../../img/quiz/quiz__timer.png) no-repeat;
-		height: 30px;
-		width: 30px;
+		// TODO: Сделать секундомер, этот не работает
+		//content: '';
+		//position: absolute;
+		//top: -2%;
+		//right: 32%;
+		//background: url(../../img/quiz/quiz__timer.png) no-repeat;
+		//height: 30px;
+		//width: 30px;
 	}
 }
 
