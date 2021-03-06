@@ -101,7 +101,7 @@ const timer = () => {
 			}
 			timerValue -= 1;
 			document.querySelector('.quiz__timer-value').innerHTML = timerValue;
-		}, 100);
+		}, 1000);
 	};
 
 	allAnswers.forEach((answer) => {
