@@ -8250,9 +8250,13 @@ body {
       width: 1000px;
       height: 500px; }
     .intro .intro__phone img.img-fluid {
+      position: relative;
+      z-index: 1;
       height: 590px;
       width: 330px; }
   .intro .intro__inst-1 {
+    -webkit-animation: inst-1 12s infinite ease-in-out;
+            animation: inst-1 12s infinite ease-in-out;
     position: absolute;
     z-index: 1;
     bottom: 29%;
@@ -8268,6 +8272,8 @@ body {
     width: 104px;
     height: 104px; }
   .intro .intro__inst-2 {
+    -webkit-animation: inst-2 12s infinite ease-in-out;
+            animation: inst-2 12s infinite ease-in-out;
     position: absolute;
     top: 18%;
     left: -11%;
@@ -8281,6 +8287,50 @@ body {
     left: -11%;
     width: 90px;
     height: 90px; }
+
+@-webkit-keyframes inst-1 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@keyframes inst-1 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@-webkit-keyframes inst-2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@keyframes inst-2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
 
 @media screen and (max-width: 1199px) {
   .intro .intro__title {
