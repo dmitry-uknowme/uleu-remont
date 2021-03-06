@@ -1,5 +1,14 @@
 body {
 	overflow-x: hidden;
 	// Если так сделать, то фон будет 'рывками'
+	// -понял
 	//background: url(../img/intro/intro__bg.png);
 }
+
+// *,
+// *::after,
+*::before {
+	border: 2px solid red;
+}
+
+//debug

@@ -30,15 +30,15 @@
 	text-align: left;
 	text-transform: uppercase;
 	position: relative;
-	&::before {
+	&::after {
 		// Ломает адаптив
-		//content: '';
-		//position: absolute;
-		//top: 0;
-		//left: 0;
-		//background: url(../img/contacts/contacts/contacts__cloud.png);
-		//width: 1146px;
-		//height: 488px;
+		// content: '';
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// background: url(../img/contacts/contacts__cloud.png);
+		// width: 1146px;
+		// height: 488px;
 	}
 }
 
@@ -68,7 +68,17 @@
 }
 
 .contacts__btn {
+	position: relative;
 	//margin-top: 15px;
+	&::after {
+		content: '';
+		position: absolute;
+		top: -996%;
+		left: -270%;
+		background: url(../img/contacts/contacts__cloud-2.png);
+		width: 1146px;
+		height: 488px;
+	}
 }
 
 .contacts__top {
@@ -175,6 +185,9 @@
 
 	.contacts__btn {
 		width: 100%;
+		&::after {
+			display: none;
+		}
 	}
 
 	.contacts__menu {
