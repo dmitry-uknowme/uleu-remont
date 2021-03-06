@@ -95,7 +95,7 @@ const timer = () => {
 	const runTimer = () => {
 		isRunning = true;
 		setInterval(() => {
-			if (timerValue <= 0) {
+			if (timerValue <= 1) {
 				timerTitle.style.opacity = '0';
 				return timerValue;
 			}

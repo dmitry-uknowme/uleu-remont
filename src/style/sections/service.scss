@@ -1,73 +1,100 @@
 .service {
-  margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 .service__container {
-  padding: 3em 0;
+	position: relative;
+	padding: 3em 0;
+	background-image: url('../img/service-background.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #000000;
+	//background-size: contain;
 
-  background-image: url("../img/service-background.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #000000;
-  //background-size: contain;
+	color: #ffffff;
+	line-height: 1.5;
+	font-family: $font-medium;
+	text-transform: uppercase;
+	text-align: center;
+	&::before {
+		content: '';
+		position: absolute;
+		top: -82%;
+		left: 0;
+		background: url(../img/service/service__red-light.png);
+		height: 1400px;
+		width: 420px;
+	}
 
-  color: #ffffff;
-  line-height: 1.5;
-  font-family: $font-medium;
-  text-transform: uppercase;
-  text-align: center;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -92%;
+		right: 0;
+		background: url(../img/service/service__red-light-2.png);
+		height: 1400px;
+		width: 450px;
+	}
 }
 
 .service-item {
-  position: relative;
+	position: relative;
 
-  & .item__bg {
-    background: rgba(0,0,0,0.5);;
-    //filter: blur(4px);
-    backdrop-filter: blur(8px);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
+	& .item__bg {
+		background: rgba(0, 0, 0, 0.5);
+		//filter: blur(4px);
+		backdrop-filter: blur(8px);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
 
-  & .item__content {
-    position: relative;
-  }
+	& .item__content {
+		position: relative;
+	}
 }
 
 .service-item__img {
-  position: relative;
-  height: 212px;
-  //top: 50px;
+	position: relative;
+	height: 212px;
+	//top: 50px;
 }
 
 .service-item__text {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 360px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  padding: 15px;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(8px);
+	margin: 0 auto;
+	width: 100%;
+	max-width: 360px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(8px);
 }
 
 .service__title {
-  margin-bottom: 2rem;
-  font-family: $font-black;
-  font-size: $title-size-default;
-  font-style: italic;
+	margin-bottom: 2rem;
+	font-family: $font-black;
+	font-size: $title-size-default;
+	font-style: italic;
 }
 
 .service-item {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 1199px){
-  .service-item__text {
-    font-size: 14px;
-  }
+@media screen and (max-width: 1199px) {
+	.service__container {
+		&::before {
+			display: none;
+		}
+		&::after {
+			display: none;
+		}
+	}
+	.service-item__text {
+		font-size: 14px;
+	}
 }

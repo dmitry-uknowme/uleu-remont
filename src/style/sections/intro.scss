@@ -54,6 +54,15 @@
 	}
 
 	& .intro__btn {
+		&::after {
+			content: '';
+			position: absolute;
+			top: 9%;
+			left: -77%;
+			background: url(../img/intro/intro__button-cloud.png);
+			width: 586px;
+			height: 488px;
+		}
 		margin-top: 3rem;
 		& .btn-default_prgm {
 			position: relative;
@@ -80,8 +89,8 @@
 			width: 120px;
 
 			// TODO: Создать контейнер, т.к. на мобилках ширина 100% у 3-го блока
-			//background: #eee;
-			//border-radius: 20px 20px 95px 49px;
+			background: #eee;
+			border-radius: 20px 20px 95px 49px;
 			height: 120px;
 			padding: 1rem;
 			box-sizing: content-box;
@@ -115,6 +124,15 @@
 	}
 	& .intro__phone {
 		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -43%;
+			left: -49%;
+			background: url(../img/intro/intro__phone-cloud.png);
+			width: 1000px;
+			height: 500px;
+		}
 		img.img-fluid {
 			height: 590px;
 			width: 330px;
@@ -162,6 +180,9 @@
 			font-size: 34px;
 			white-space: normal;
 			text-align: center;
+			&::after {
+				display: none;
+			}
 		}
 
 		& .intro__subtitle {
@@ -175,18 +196,24 @@
 		}
 
 		& .intro__btn {
+			position: relative;
 			text-align: center;
+			&::after {
+				display: none;
+			}
 		}
 
 		& .intro__items {
 			flex-wrap: wrap;
 			text-align: center;
-			justify-content: center;
+			justify-content: space-around;
 
 			& .intro__item {
-				padding: 0 1rem !important;
+				width: 100px;
+				height: 100px;
+				border-radius: 30% 20% 42% 8%;
+				// padding: 0 1rem !important;
 				margin-bottom: 1rem;
-
 				&:last-child {
 					width: 100%;
 				}
@@ -196,6 +223,21 @@
 				font-size: 12px;
 				text-align: center;
 			}
+		}
+	}
+}
+
+@media screen and(max-width:767px) {
+	.intro__items > .container > .row {
+		justify-content: center;
+	}
+}
+
+@media screen and(max-width:400px) {
+	.intro {
+		.intro__btn::after {
+			top: -637%;
+			left: -113%;
 		}
 	}
 }

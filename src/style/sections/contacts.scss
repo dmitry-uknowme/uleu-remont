@@ -1,154 +1,163 @@
 .contacts {
-  position: relative;
-  padding: 1rem 0;
-  background-image: url("../img/contacts__background.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #ffffff;
+	position: relative;
+	padding: 1rem 0;
+	background-image: url('../img/contacts__background.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #ffffff;
 }
 
 .contacts__title {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 
-  font-family: $font-ExtraBold;
-  color: $red-1;
-  font-size: 25px;
-  font-style: italic;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: left;
-  text-transform: uppercase;
+	font-family: $font-ExtraBold;
+	color: $red-1;
+	font-size: 25px;
+	font-style: italic;
+	letter-spacing: normal;
+	line-height: normal;
+	text-align: left;
+	text-transform: uppercase;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(../img/contacts/contacts/contacts__cloud.png);
+		width: 1146px;
+		height: 488px;
+	}
 }
 
 .contacts__phone-title {
-  font-size: 20px;
-  font-family: $font-medium;
+	font-size: 20px;
+	font-family: $font-medium;
 }
 
 .contacts__phone-number {
-  font-size: 20px;
-  font-family: $font-bold;
+	font-size: 20px;
+	font-family: $font-bold;
 }
 
 .contacts__map-text {
-  font-size: 20px;
-  font-family: $font-bold;
-  text-transform: uppercase;
+	font-size: 20px;
+	font-family: $font-bold;
+	text-transform: uppercase;
 }
 
 .contacts__map-line {
-  width: 100%;
-  height: 6px;
-  background-color: $red-2;
+	width: 100%;
+	height: 6px;
+	background-color: $red-2;
 }
 
 .contacts__btn {
-  //margin-top: 15px;
+	//margin-top: 15px;
 }
 
 .contacts__top {
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid $red-1;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid $red-1;
 }
 
 .contacts__bottom {
-  //margin-bottom: 2rem;
+	//margin-bottom: 2rem;
 }
 
 .contacts__copyright {
-  font-size: 16px;
-  font-weight: bold;
-  font-family: $font-default;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: $font-default;
 }
 
 .contacts__btn {
-  margin-bottom: 7px;
-  & .btn-default_prgm {
-    margin-left: 0;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
+	margin-bottom: 7px;
+	& .btn-default_prgm {
+		margin-left: 0;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
 }
 
 .contacts__policy {
-  font-size: 16px;
-  font-weight: bold;
-  font-family: $font-ExtraBold;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: $font-ExtraBold;
 }
 
 .contacts__menu {
+	font-family: $font-default;
+	font-size: 17px;
+	font-weight: bold;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 39.62px;
 
-  font-family: $font-default;
-  font-size: 17px;
-  font-weight: bold;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 39.62px;
-
-  & ul {
-    padding: 0;
-    list-style: none;
-  }
+	& ul {
+		padding: 0;
+		list-style: none;
+	}
 }
 
 .contacts__map-inner {
-  height: 102px;
-  width: 100%;
+	height: 102px;
+	width: 100%;
 
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 
-  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
+	box-shadow: 0 7px 18px rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
 
-  & > div {
-    height: 100%;
-    width: 100%;
-  }
+	& > div {
+		height: 100%;
+		width: 100%;
+	}
 
-  & iframe {
-    height: 100%;
-    width: 100%;
-    border: 0;
-  }
+	& iframe {
+		height: 100%;
+		width: 100%;
+		border: 0;
+	}
 }
 
 .contacts__menu {
-  position: relative;
-  left: 5px;
+	position: relative;
+	left: 5px;
 
-  & ul {
-    position: relative;
-  }
+	& ul {
+		position: relative;
+	}
 
-  & ul:before {
-    position: absolute;
-    left: -30px;
-    top: 8px;
-    content: " ";
-    background-image: url("../img/contacts__settings.png");
-    width: 21px;
-    height: 21px;
-  }
+	& ul:before {
+		position: absolute;
+		left: -30px;
+		top: 8px;
+		content: ' ';
+		background-image: url('../img/contacts__settings.png');
+		width: 21px;
+		height: 21px;
+	}
 }
 
 @media screen and (max-width: 1199px) {
-  .contacts__title {
-    text-align: center;
-  }
+	.contacts__title {
+		text-align: center;
+	}
 
-  .contacts__phone-number:last-child {
-    margin-bottom: 3rem;
-  }
+	.contacts__phone-number:last-child {
+		margin-bottom: 3rem;
+	}
 
-  .contacts__btn {
-    width: 100%;
-  }
+	.contacts__btn {
+		width: 100%;
+	}
 
-  .contacts__menu {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-  }
+	.contacts__menu {
+		display: flex;
+		justify-content: center;
+		text-align: left;
+	}
 }

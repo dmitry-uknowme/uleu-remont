@@ -8,9 +8,9 @@ const inst = () => {
 		return sides[Math.floor(Math.random() * (3 + 1))];
 	};
 	phone.addEventListener('mousemove', (e) => {
-		backInst.style.zIndex = '1';
-		fronInst.classList.remove('_unactive');
-		backInst.classList.remove('_unactive');
+		// backInst.style.zIndex = '1';
+		// fronInst.classList.remove('_unactive');
+		// backInst.classList.remove('_unactive');
 		// const pos = e.target;
 		// let X = e.pageX - pos.clientX,
 		// 	Y = e.pageY - pos.clientY,
@@ -23,22 +23,22 @@ const inst = () => {
 		// // console.log(X, Y);
 
 		setTimeout(() => {
-			fronInst.style[randomSide()] = e.clientX / 5 + 'px';
-			fronInst.style[randomSide()] = e.clientY / 5 + 'px';
-			backInst.style[randomSide()] = e.clientX / 5 + 'px';
-			backInst.style[randomSide()] = e.clientY / 5 + 'px';
-		}, 1500);
+			fronInst.style.left = -e.clientX / 10 + 'px';
+			fronInst.style.top = e.clientY / 10 + 'px';
+			backInst.style.left = e.clientX / 10 + 'px';
+			backInst.style.top = -e.clientY / 10 + 'px';
+		}, 500);
 	});
 	phone.addEventListener('mouseleave', (e) => {
 		console.log('leave');
-		fronInst.classList.add('_unactive');
-		backInst.classList.add('_unactive');
+		// fronInst.classList.add('_unactive');
+		// backInst.classList.add('_unactive');
 
-		fronInst.style.bottom = 29 + '%';
-		fronInst.style.right = -2 + '%';
-		backInst.style.top = 18 + '%';
-		backInst.style.left = -11 + '%';
-		backInst.style.zIndex = '-1';
+		// fronInst.style.bottom = 29 + '%';
+		// fronInst.style.right = -2 + '%';
+		// backInst.style.top = 18 + '%';
+		// backInst.style.left = -11 + '%';
+		// backInst.style.zIndex = '-1';
 	});
 };
 
