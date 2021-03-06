@@ -97,19 +97,21 @@
 		margin-bottom: 100px;
 		text-align: center;
 		.btn-default {
-			width: 25%;
-			height: 90px;
-			position: relative;
-			white-space: inherit;
+			// ломает адаптив
+			//width: 25%;
+			//height: 90px;
+			//position: relative;
+			//white-space: inherit;
 			&::after {
-				content: '';
-				position: absolute;
-				top: 50%;
-				right: -30%;
-				background: url(../img/reviews/reviews__mobile-mini.png);
-				width: 140px;
-				height: 180px;
-				transform: translateY(-50%);
+				// Ломает адаптив
+				//content: '';
+				//position: absolute;
+				//top: 50%;
+				//right: -30%;
+				//background: url(../img/reviews/reviews__mobile-mini.png);
+				//width: 140px;
+				//height: 180px;
+				//transform: translateY(-50%);
 			}
 		}
 	}

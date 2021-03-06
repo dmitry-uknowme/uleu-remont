@@ -21,13 +21,14 @@
 	text-transform: uppercase;
 	position: relative;
 	&::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: url(../img/contacts/contacts/contacts__cloud.png);
-		width: 1146px;
-		height: 488px;
+		// Ломает адаптив
+		//content: '';
+		//position: absolute;
+		//top: 0;
+		//left: 0;
+		//background: url(../img/contacts/contacts/contacts__cloud.png);
+		//width: 1146px;
+		//height: 488px;
 	}
 }
 

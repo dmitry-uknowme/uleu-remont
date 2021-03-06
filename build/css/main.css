@@ -8004,8 +8004,7 @@ a.text-dark:hover, a.text-dark:focus {
   src: url("../fonts/Montserrat-Regular.ttf"); }
 
 body {
-  overflow-x: hidden;
-  background: url(../img/intro/intro__bg.png); }
+  overflow-x: hidden; }
 
 .btn-default {
   padding: 20px 40px;
@@ -8048,6 +8047,12 @@ body {
   .btn-default, .btn-default_prgm {
     padding: 10px 20px;
     font-size: 15px; } }
+
+.header-intro_bg {
+  background: url(../img/intro/intro__bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover; }
 
 .header {
   margin-bottom: 4em; }
@@ -8216,14 +8221,12 @@ body {
     -ms-flex-pack: justify;
         justify-content: space-between; }
     .intro .intro__items .intro__item {
-      width: 120px;
+      width: 132px;
       background: #eee;
       border-radius: 20px 20px 95px 49px;
       height: 120px;
       padding: 1rem;
       box-sizing: content-box; }
-      .intro .intro__items .intro__item:last-child {
-        padding-right: 0; }
     .intro .intro__items .item__img {
       margin-bottom: 0.5rem; }
     .intro .intro__items .item__text {
@@ -8252,6 +8255,8 @@ body {
   .intro .intro__inst-1 {
     position: absolute;
     z-index: 1;
+    bottom: 29%;
+    right: -3%;
     width: 104px;
     height: 104px;
     transition: all 0.9s; }
@@ -8264,13 +8269,14 @@ body {
     height: 104px; }
   .intro .intro__inst-2 {
     position: absolute;
-    z-index: 1;
+    top: 18%;
+    left: -11%;
     width: 90px;
     height: 90px;
     transition: all 0.9s; }
   .intro .intro__inst-2._unactive {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: 18%;
     left: -11%;
     width: 90px;
@@ -8302,12 +8308,12 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .intro .intro__items .intro__item {
+      margin-left: 1rem;
+      margin-rigth: 1rem;
       width: 100px;
       height: 100px;
       border-radius: 30% 20% 42% 8%;
       margin-bottom: 1rem; }
-      .intro .intro__items .intro__item:last-child {
-        width: 100%; }
     .intro .intro__items .item__text {
       font-size: 12px;
       text-align: center; } }
@@ -8323,14 +8329,14 @@ body {
     left: -113%; } }
 
 .quiz {
-  background: url("../img/quiz/quiz__bg.png"); }
+  padding-bottom: 3rem; }
 
 .quiz__container {
   position: relative; }
   .quiz__container::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: -33px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -8338,12 +8344,11 @@ body {
     width: 340px;
     height: 530px; }
   .quiz__container::after {
+    z-index: 1;
     content: '';
     position: absolute;
-    right: 0;
-    bottom: -22%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    right: -100px;
+    bottom: -200px;
     background: url(../img/quiz/quiz__man.png);
     width: 450px;
     height: 600px; }
@@ -8676,6 +8681,10 @@ body {
   text-align: right; }
 
 @media screen and (max-width: 1199px) {
+  .quiz__subtitle::after {
+    display: none !important; }
+  .tab-pane {
+    height: 1150px !important; }
   .quiz__container::after {
     display: none; }
   .quiz__container::before {
@@ -8705,7 +8714,7 @@ body {
   width: 290px; }
 
 .tab-pane {
-  height: 1160px; }
+  height: 700px; }
 
 .quiz__title {
   font-size: 34px; }
@@ -9152,22 +9161,7 @@ body {
   .reviews__btn {
     margin-top: 50px;
     margin-bottom: 100px;
-    text-align: center; }
-    .reviews__btn .btn-default {
-      width: 25%;
-      height: 90px;
-      position: relative;
-      white-space: inherit; }
-      .reviews__btn .btn-default::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: -30%;
-        background: url(../img/reviews/reviews__mobile-mini.png);
-        width: 140px;
-        height: 180px;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%); } }
+    text-align: center; } }
 
 .support {
   margin-bottom: 15rem; }
@@ -9295,14 +9289,6 @@ body {
   text-align: left;
   text-transform: uppercase;
   position: relative; }
-  .contacts__title::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(../img/contacts/contacts/contacts__cloud.png);
-    width: 1146px;
-    height: 488px; }
 
 .contacts__phone-title {
   font-size: 20px;
