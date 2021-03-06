@@ -134,12 +134,15 @@
 			height: 500px;
 		}
 		img.img-fluid {
+			position: relative;
+			z-index: 1;
 			height: 590px;
 			width: 330px;
 		}
 	}
 
 	& .intro__inst-1 {
+		animation: inst-1 12s infinite ease-in-out;
 		position: absolute;
 		z-index: 1;
 		bottom: 29%;
@@ -159,6 +162,7 @@
 	}
 
 	& .intro__inst-2 {
+		animation: inst-2 12s infinite ease-in-out;
 		position: absolute;
 		top: 18%;
 		left: -11%;
@@ -176,6 +180,18 @@
 		width: 90px;
 		height: 90px;
 	}
+}
+
+@keyframes inst-1 {
+	0%   { transform: rotate(0) }
+	50% { transform: rotate(90deg) }
+	100% { transform: rotate(0) }
+}
+
+@keyframes inst-2 {
+	0%   { transform: rotate(0) }
+	50% { transform: rotate(-90deg) }
+	100% { transform: rotate(0) }
 }
 
 @media screen and (max-width: 1199px) {

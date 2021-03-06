@@ -8067,6 +8067,9 @@ body {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center; }
+    .header .header__items_top a {
+      color: black;
+      text-decoration: none; }
     .header .header__items_top .header__text-medium {
       white-space: nowrap;
       font-family: "Montserrat Medium", sans-serif;
@@ -8113,6 +8116,9 @@ body {
       line-height: 12.16px;
       text-align: left;
       text-transform: uppercase; }
+      .header .header__items_bottom .header__item a {
+        color: black;
+        text-decoration: none; }
     .header .header__items_bottom .header__item:after {
       content: '';
       position: absolute;
@@ -8250,9 +8256,13 @@ body {
       width: 1000px;
       height: 500px; }
     .intro .intro__phone img.img-fluid {
+      position: relative;
+      z-index: 1;
       height: 590px;
       width: 330px; }
   .intro .intro__inst-1 {
+    -webkit-animation: inst-1 12s infinite ease-in-out;
+            animation: inst-1 12s infinite ease-in-out;
     position: absolute;
     z-index: 1;
     bottom: 29%;
@@ -8268,6 +8278,8 @@ body {
     width: 104px;
     height: 104px; }
   .intro .intro__inst-2 {
+    -webkit-animation: inst-2 12s infinite ease-in-out;
+            animation: inst-2 12s infinite ease-in-out;
     position: absolute;
     top: 18%;
     left: -11%;
@@ -8281,6 +8293,50 @@ body {
     left: -11%;
     width: 90px;
     height: 90px; }
+
+@-webkit-keyframes inst-1 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@keyframes inst-1 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@-webkit-keyframes inst-2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@keyframes inst-2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
 
 @media screen and (max-width: 1199px) {
   .intro .intro__title {
@@ -9303,6 +9359,8 @@ body {
 .contacts__phone-number {
   font-size: 20px;
   font-family: "Montserrat Bold", sans-serif; }
+  .contacts__phone-number a {
+    color: #000000; }
 
 .contacts__map-text {
   font-size: 20px;
@@ -9346,6 +9404,8 @@ body {
   .contacts__menu ul {
     padding: 0;
     list-style: none; }
+  .contacts__menu a {
+    color: black; }
 
 .contacts__map-inner {
   height: 102px;
@@ -9374,6 +9434,9 @@ body {
     background-image: url("../img/contacts__settings.png");
     width: 21px;
     height: 21px; }
+
+.contacts__policy a {
+  color: black; }
 
 @media screen and (max-width: 1199px) {
   .contacts__title {

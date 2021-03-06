@@ -18,6 +18,10 @@
 		padding: 20px 0;
 		justify-content: space-between;
 		align-items: center;
+		& a {
+			color: black;
+			text-decoration: none;
+		}
 		& .header__item {
 		}
 		& .header__text-medium {
@@ -75,6 +79,10 @@
 			line-height: 12.16px;
 			text-align: left;
 			text-transform: uppercase;
+			& a {
+				color: black;
+				text-decoration: none;
+			}
 		}
 
 		& .header__item:after {
