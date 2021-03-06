@@ -40,6 +40,9 @@
 .contacts__phone-number {
 	font-size: 20px;
 	font-family: $font-bold;
+	& a {
+		color: #000000;
+	}
 }
 
 .contacts__map-text {
@@ -101,6 +104,10 @@
 		padding: 0;
 		list-style: none;
 	}
+
+	& a {
+		color: black;
+	}
 }
 
 .contacts__map-inner {
@@ -141,6 +148,10 @@
 		width: 21px;
 		height: 21px;
 	}
+}
+
+.contacts__policy a {
+	color: black;
 }
 
 @media screen and (max-width: 1199px) {

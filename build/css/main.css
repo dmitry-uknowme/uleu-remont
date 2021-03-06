@@ -8067,6 +8067,9 @@ body {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center; }
+    .header .header__items_top a {
+      color: black;
+      text-decoration: none; }
     .header .header__items_top .header__text-medium {
       white-space: nowrap;
       font-family: "Montserrat Medium", sans-serif;
@@ -8113,6 +8116,9 @@ body {
       line-height: 12.16px;
       text-align: left;
       text-transform: uppercase; }
+      .header .header__items_bottom .header__item a {
+        color: black;
+        text-decoration: none; }
     .header .header__items_bottom .header__item:after {
       content: '';
       position: absolute;
@@ -9347,6 +9353,8 @@ body {
 .contacts__phone-number {
   font-size: 20px;
   font-family: "Montserrat Bold", sans-serif; }
+  .contacts__phone-number a {
+    color: #000000; }
 
 .contacts__map-text {
   font-size: 20px;
@@ -9390,6 +9398,8 @@ body {
   .contacts__menu ul {
     padding: 0;
     list-style: none; }
+  .contacts__menu a {
+    color: black; }
 
 .contacts__map-inner {
   height: 102px;
@@ -9418,6 +9428,9 @@ body {
     background-image: url("../img/contacts__settings.png");
     width: 21px;
     height: 21px; }
+
+.contacts__policy a {
+  color: black; }
 
 @media screen and (max-width: 1199px) {
   .contacts__title {
