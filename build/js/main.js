@@ -21972,23 +21972,23 @@ answers3.click(function (event) {
 });
 
 const timer = () => {
-	const answers1 = document.querySelector('.quiz-answer');
-	const answers2 = document.querySelector('.quiz-answer-2');
-	const answers3 = document.querySelector('.quiz-answer-3');
+	const answers1 = document.querySelectorAll('.quiz-answer');
+	const answers2 = document.querySelectorAll('.quiz-answer-2');
+	const answers3 = document.querySelectorAll('.quiz-answer-3');
 	const timerTitle = document.querySelector('.quiz__subtitle');
 	let isRunning = false;
 	let timerValue = 25;
-	const allAnswers = [answers1, answers2, answers3];
+	const allAnswers = [...answers1, ...answers2, ...answers3];
 	const runTimer = () => {
 		isRunning = true;
 		setInterval(() => {
 			if (timerValue <= 1) {
-				timerTitle.style.opacity = '0';
+				timerTitle.classList.add('_hide');
 				return timerValue;
 			}
 			timerValue -= 1;
 			document.querySelector('.quiz__timer-value').innerHTML = timerValue;
-		}, 1000);
+		}, 100);
 	};
 
 	allAnswers.forEach((answer) => {
@@ -22006,30 +22006,30 @@ const timer = () => {
 timer();
 
 function send(event) {
-    let form = $(event.target).parents('form');
+	let form = $(event.target).parents('form');
 
-    let name = form.find('.name').val();
-    let phone = form.find('.phone').val();
+	let name = form.find('.name').val();
+	let phone = form.find('.phone').val();
 
-    let data = {form: {name: name, phone: phone}, quiz: {answer1: d1, answer2: d2, answer3: d3}}
+	let data = { form: { name: name, phone: phone }, quiz: { answer1: d1, answer2: d2, answer3: d3 } };
 
-    //console.log({form: {name: name, phone: phone}, quiz: {answer1: d1, answer2: d2, answer3: d3}})
+	//console.log({form: {name: name, phone: phone}, quiz: {answer1: d1, answer2: d2, answer3: d3}})
 
-    $.ajax({
-        url: "server/mail.php",
-        type: "POST",
-        data: data,
-        success: function(msg){
-            console.log(msg);
-            alert("Заявка принята")
-            // $("#exampleModal .modal-info").css('opacity', 0);
-            // $("#exampleModal .modal-success").css('opacity', 1);
-        },
-        error: function () {
-            console.log(data)
-            alert("Ошибка отправки заявки, попробуйте позднее.")
-        }
-    });
+	$.ajax({
+		url: 'server/mail.php',
+		type: 'POST',
+		data: data,
+		success: function (msg) {
+			console.log(msg);
+			alert('Заявка принята');
+			// $("#exampleModal .modal-info").css('opacity', 0);
+			// $("#exampleModal .modal-success").css('opacity', 1);
+		},
+		error: function () {
+			console.log(data);
+			alert('Ошибка отправки заявки, попробуйте позднее.');
+		},
+	});
 }
 var owl = $('.owl-carousel');
 

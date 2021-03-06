@@ -8371,6 +8371,7 @@ body {
     color: #2aef03; }
 
 .quiz__subtitle {
+  transition: all 0.5s;
   position: relative;
   margin-bottom: 1.5rem;
   color: #000000;
@@ -8392,6 +8393,11 @@ body {
     width: 30px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
+
+.quiz__subtitle._hide {
+  letter-spacing: 2px;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%); }
 
 .quiz__clock {
   position: absolute;

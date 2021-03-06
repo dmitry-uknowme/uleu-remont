@@ -55,6 +55,7 @@
 }
 
 .quiz__subtitle {
+	transition: all 0.5s;
 	position: relative;
 	margin-bottom: 1.5rem;
 
@@ -77,6 +78,11 @@
 		width: 30px;
 		transform: translateY(-50%);
 	}
+}
+
+.quiz__subtitle._hide {
+	letter-spacing: 2px;
+	transform: translateX(200%);
 }
 
 .quiz__clock {
