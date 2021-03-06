@@ -21937,6 +21937,8 @@ answers1.click(function (event) {
 	d1 = el.data('answer-1');
 
 	$(questions[1]).find('a').click();
+
+	timer();
 });
 
 answers2.click(function (event) {
