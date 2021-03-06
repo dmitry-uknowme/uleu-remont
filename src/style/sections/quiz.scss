@@ -399,6 +399,12 @@
 	text-align: right;
 }
 
+@media screen and (max-width: 1600px) {
+	.quiz__clock {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 1199px) {
 	.quiz__subtitle::after {
 		display: none !important;
@@ -424,10 +430,6 @@
 
 .quiz-main__title {
 	font-size: 34px;
-}
-
-.quiz__clock {
-	display: none;
 }
 
 .quiz-answer__img {
@@ -511,4 +513,37 @@
 
 .check__description {
 	text-align: center;
+}
+
+.quiz-answer__text::first-line {
+	text-transform: none;
+}
+
+@media screen and (max-width: 767px) {
+	.quiz-main__title {
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			top: -105%;
+			left: 57%;
+			background: url(../img/quiz/quiz__cloud-mini.png);
+			width: 562px;
+			height: 234px;
+			z-index: 1;
+		}
+	}
+	.quiz-main__answers {
+		margin-top: 70px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.quiz-main__title {
+		position: relative;
+		&::after {
+			top: -6%;
+			left: 32%;
+		}
+	}
 }

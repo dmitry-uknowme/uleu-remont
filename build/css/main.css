@@ -8269,14 +8269,7 @@ body {
     right: -3%;
     width: 104px;
     height: 104px;
-    transition: all 0.9s; }
-  .intro .intro__inst-1._unactive {
-    position: absolute;
-    z-index: 1;
-    bottom: 29%;
-    right: -3%;
-    width: 104px;
-    height: 104px; }
+    transition: all 0.3s; }
   .intro .intro__inst-2 {
     -webkit-animation: inst-2 12s infinite ease-in-out;
             animation: inst-2 12s infinite ease-in-out;
@@ -8285,14 +8278,7 @@ body {
     left: -11%;
     width: 90px;
     height: 90px;
-    transition: all 0.9s; }
-  .intro .intro__inst-2._unactive {
-    position: absolute;
-    z-index: 1;
-    top: 18%;
-    left: -11%;
-    width: 90px;
-    height: 90px; }
+    transition: all 0.3s; }
 
 @-webkit-keyframes inst-1 {
   0% {
@@ -8365,19 +8351,29 @@ body {
         justify-content: space-around; }
     .intro .intro__items .intro__item {
       margin-left: 1rem;
-      margin-rigth: 1rem;
-      width: 100px;
-      height: 100px;
+      margin-right: 1rem;
       border-radius: 30% 20% 42% 8%;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      position: relative;
+      width: 100px;
+      height: 100px; }
     .intro .intro__items .item__text {
       font-size: 12px;
-      text-align: center; } }
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      margin-top: 20px; } }
 
 @media screen and (max-width: 767px) {
   .intro__items > .container > .row {
     -ms-flex-pack: center;
-        justify-content: center; } }
+        justify-content: center; }
+  .intro__text {
+    font-size: 13px;
+    width: 90px; } }
 
 @media screen and (max-width: 400px) {
   .intro .intro__btn::after {
@@ -8742,6 +8738,10 @@ body {
   line-height: normal;
   text-align: right; }
 
+@media screen and (max-width: 1600px) {
+  .quiz__clock {
+    display: none; } }
+
 @media screen and (max-width: 1199px) {
   .quiz__subtitle::after {
     display: none !important; }
@@ -8756,9 +8756,6 @@ body {
 
 .quiz-main__title {
   font-size: 34px; }
-
-.quiz__clock {
-  display: none; }
 
 .quiz-answer__img {
   width: 110px;
@@ -8817,6 +8814,31 @@ body {
 
 .check__description {
   text-align: center; }
+
+.quiz-answer__text::first-line {
+  text-transform: none; }
+
+@media screen and (max-width: 767px) {
+  .quiz-main__title {
+    position: relative; }
+    .quiz-main__title::after {
+      content: '';
+      position: absolute;
+      top: -105%;
+      left: 57%;
+      background: url(../img/quiz/quiz__cloud-mini.png);
+      width: 562px;
+      height: 234px;
+      z-index: 1; }
+  .quiz-main__answers {
+    margin-top: 70px; } }
+
+@media screen and (max-width: 520px) {
+  .quiz-main__title {
+    position: relative; }
+    .quiz-main__title::after {
+      top: -6%;
+      left: 32%; } }
 
 .feedback {
   margin-top: -116px;
@@ -9223,7 +9245,34 @@ body {
   .reviews__btn {
     margin-top: 50px;
     margin-bottom: 100px;
-    text-align: center; } }
+    text-align: center; }
+    .reviews__btn .btn-default {
+      width: 25%;
+      height: 90px;
+      position: relative;
+      white-space: inherit; }
+      .reviews__btn .btn-default::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -30%;
+        background: url(../img/reviews/reviews__mobile-mini.png);
+        width: 140px;
+        height: 180px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); } }
+
+@media screen and (max-width: 991px) {
+  .reviews__btn .btn-default {
+    width: 35%; } }
+
+@media screen and (max-width: 767px) {
+  .reviews__btn {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center; }
+    .reviews__btn .btn-default {
+      width: 47%; } }
 
 .support {
   margin-bottom: 15rem; }
@@ -9339,6 +9388,16 @@ body {
   background-position: center center;
   background-size: cover;
   background-color: #ffffff; }
+  .contacts .btn-default__call {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: -25px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-transform: translate(25%, -5%);
+            transform: translate(25%, -5%); }
 
 .contacts__title {
   margin-bottom: 2rem;
