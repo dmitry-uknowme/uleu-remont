@@ -21931,6 +21931,12 @@ answers1.click(function (event) {
 			$(answers1[i]).removeClass('active');
 		}
 	}
+	//тут можно обойтись без цикла
+	// const activeAnswer = $('.quiz-answer.active');
+	// if (activeAnswer) {
+	// 	activeAnswer.removeClass('active');
+	// }
+	// el.addClass('active');
 
 	el.addClass('active');
 

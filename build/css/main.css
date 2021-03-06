@@ -8006,9 +8006,6 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   overflow-x: hidden; }
 
-*::before {
-  border: 2px solid red; }
-
 .btn-default {
   padding: 20px 40px;
   background-color: #ff0000;
