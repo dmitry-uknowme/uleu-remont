@@ -9246,34 +9246,7 @@ body {
   .reviews__btn {
     margin-top: 50px;
     margin-bottom: 100px;
-    text-align: center; }
-    .reviews__btn .btn-default {
-      width: 25%;
-      height: 90px;
-      position: relative;
-      white-space: inherit; }
-      .reviews__btn .btn-default::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: -30%;
-        background: url(../img/reviews/reviews__mobile-mini.png);
-        width: 140px;
-        height: 180px;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%); } }
-
-@media screen and (max-width: 991px) {
-  .reviews__btn .btn-default {
-    width: 35%; } }
-
-@media screen and (max-width: 767px) {
-  .reviews__btn {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    text-align: center; }
-    .reviews__btn .btn-default {
-      width: 47%; } }
+    text-align: center; } }
 
 .support {
   margin-bottom: 15rem; }

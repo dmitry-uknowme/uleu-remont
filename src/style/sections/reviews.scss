@@ -96,39 +96,40 @@
 		margin-top: 50px;
 		margin-bottom: 100px;
 		text-align: center;
-		.btn-default {
-			width: 25%;
-			height: 90px;
-			position: relative;
-			white-space: inherit;
-			&::after {
-				content: '';
-				position: absolute;
-				top: 50%;
-				right: -30%;
-				background: url(../img/reviews/reviews__mobile-mini.png);
-				width: 140px;
-				height: 180px;
-				transform: translateY(-50%);
-			}
-		}
+		// Картинка сьезжает на текст в мобильной версии
+		//.btn-default {
+		//	width: 25%;
+		//	height: 90px;
+		//	position: relative;
+		//	white-space: inherit;
+		//	&::after {
+		//		content: '';
+		//		position: absolute;
+		//		top: 50%;
+		//		right: -30%;
+		//		background: url(../img/reviews/reviews__mobile-mini.png);
+		//		width: 140px;
+		//		height: 180px;
+		//		transform: translateY(-50%);
+		//	}
+		//}
 	}
 }
 
-@media screen and (max-width: 991px) {
-	.reviews__btn {
-		.btn-default {
-			width: 35%;
-		}
-	}
-}
-@media screen and (max-width: 767px) {
-	.reviews__btn {
-		margin-top: 50px;
-		margin-bottom: 100px;
-		text-align: center;
-		.btn-default {
-			width: 47%;
-		}
-	}
-}
+//@media screen and (max-width: 991px) {
+//	.reviews__btn {
+//		.btn-default {
+//			width: 35%;
+//		}
+//	}
+//}
+//@media screen and (max-width: 767px) {
+//	.reviews__btn {
+//		margin-top: 50px;
+//		margin-bottom: 100px;
+//		text-align: center;
+//		.btn-default {
+//			width: 47%;
+//		}
+//	}
+//}
