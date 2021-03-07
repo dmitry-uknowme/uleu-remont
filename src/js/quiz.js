@@ -125,27 +125,72 @@ const timer = () => {
 timer();
 
 function send(event) {
-	let form = $(event.target).parents('form');
+	let form = $(event.target).parents('.support-form');
 
-	let name = form.find('.name').val();
-	let phone = form.find('.phone').val();
+	let name_i = form.find('.name')
+	let name = name_i.val();
+	let phone_i = form.find('.phone');
+	let phone = phone_i.val();
+	let errors = 0;
+
+	if (name == null || name == undefined || name == "") {
+		$('.name-error').css('display', 'block');
+		errors++;
+	} else {
+		$('.name-error').css('display', 'none');
+	}
+
+	if (phone == null || phone == undefined || phone == "") {
+		$('.phone-error').css('display', 'block');
+		errors++;
+	} else {
+		$('.phone-error').css('display', 'none');
+	}
+
+	if (errors > 0) {
+		return;
+	}
 
 	let data = { form: { name: name, phone: phone }, quiz: { answer1: d1, answer2: d2, answer3: d3 } };
-
-	//console.log({form: {name: name, phone: phone}, quiz: {answer1: d1, answer2: d2, answer3: d3}})
 
 	$.ajax({
 		url: 'server/mail.php',
 		type: 'POST',
 		data: data,
 		success: function (msg) {
+			let timerValue = 9;
+			let word = form.find(".support-form__success-word");
+			let count = form.find('.support-form__success-count');
+
 			console.log(msg);
-			alert('Заявка принята');
-			// $("#exampleModal .modal-info").css('opacity', 0);
-			// $("#exampleModal .modal-success").css('opacity', 1);
+
+			form.find('.support-form_before').css('opacity', 0);
+			form.find('.support-form_after').css('opacity', 1);
+
+			setInterval(() => {
+				count.html(timerValue);
+
+				if (timerValue == 4 || timerValue == 3 || timerValue == 2) {
+					word.html('секунды')
+				}
+
+				if (timerValue == 1) {
+					word.html('секунду')
+				}
+
+				if (timerValue < 1) {
+					name_i.val("");
+					phone_i.val("");
+					form.find('.support-form_before').css('opacity', 1);
+					form.find('.support-form_after').css('opacity', 0);
+					return timerValue;
+				}
+
+				timerValue -= 1;
+			}, 1000);
+
 		},
 		error: function () {
-			console.log(data);
 			alert('Ошибка отправки заявки, попробуйте позднее.');
 		},
 	});
