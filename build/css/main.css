@@ -8931,7 +8931,7 @@ body {
 .service__container {
   position: relative;
   padding: 3em 0;
-  background-image: url("../img/service-background.png");
+  background-image: url("../img/service/service__bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9368,7 +9368,7 @@ body {
 .contacts {
   position: relative;
   padding: 1rem 0;
-  background-image: url("../img/contacts__background.png");
+  background-image: url("../img/contacts/contacts__bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9486,7 +9486,7 @@ body {
     left: -30px;
     top: 8px;
     content: ' ';
-    background-image: url("../img/contacts__settings.png");
+    background-image: url("../img/contacts/contacts__settings.png");
     width: 21px;
     height: 21px; }
 
