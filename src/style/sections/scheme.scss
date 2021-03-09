@@ -1,74 +1,80 @@
 .scheme {
-  margin-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 
 .scheme__title {
-  margin-bottom: 2rem;
-  text-align: center;
-  font-family: $font-black;
-  font-size: $title-size-default;
-  font-style: italic;
+	margin-bottom: 6rem;
+	text-align: center;
+	font-family: $font-black;
+	font-size: $title-size-default;
+	font-style: italic;
 
-  & span {
-    color: $red-1;
-  }
+	& span {
+		color: $red-1;
+	}
 }
 
 .scheme-item {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .scheme-item__title {
-  text-transform: uppercase;
-  font-family: $font-medium;
-  color: $red-1;
-  font-size: 15px;
+	text-transform: uppercase;
+	font-family: $font-medium;
+	color: $red-1;
+	font-size: 15px;
 }
 
 .scheme-item__content {
-  font-family: $font-bold;
-  font-weight: bold;
-  font-size: 16px;
+	font-family: $font-bold;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 .scheme__bg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background: rgb(246,246,246);
-  background: linear-gradient(90deg, rgba(246,246,246,0.7) 85%, rgba(255,255,255,0) 70%);
-  backdrop-filter: blur(8px);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgb(246, 246, 246);
+	background: linear-gradient(90deg, rgba(246, 246, 246, 0.7) 85%, rgba(255, 255, 255, 0) 70%);
+	backdrop-filter: blur(8px);
 }
 
 .scheme__img-left {
-  position: absolute;
-  left: -121px;
-  top: 32px;
+	position: absolute;
+	left: -121px;
+	top: 32px;
 }
 
 .scheme__img-right {
-  position: absolute;
-  right: 41px;
-  top: -72px;
+	position: absolute;
+	right: 41px;
+	top: -72px;
 
-  & img {
-    height: 345px;
-  }
+	& img {
+		height: 345px;
+	}
 }
 
 @media screen and (max-width: 1199px) {
-  .scheme__bg {
-    background: rgb(246,246,246);
-    background: none;
-  }
+	.scheme__bg {
+		background: rgb(246, 246, 246);
+		background: none;
+	}
 
-  .scheme-item__container {
-    display: flex;
-    justify-content: center;
-    & .scheme-item {
-      width: 115px;
-    }
-  }
+	.scheme-item__container {
+		display: flex;
+		justify-content: center;
+		& .scheme-item {
+			width: 115px;
+		}
+	}
+}
+
+.repair {
+	.scheme {
+		margin-top: 15rem;
+	}
 }

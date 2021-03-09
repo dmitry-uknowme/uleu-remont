@@ -132,3 +132,41 @@
 		}
 	}
 }
+
+.repair-header {
+	.header__item_pdf {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: -8%;
+			width: 17px;
+			height: 17px;
+			transform: translateY(-50%);
+			background: url(../img/header/header__whatsapp.png);
+		}
+	}
+
+	.header__item_pdf span {
+		font-size: 10px;
+		color: #959595;
+		display: block;
+		line-height: 1rem;
+	}
+
+	.header__item_address {
+		line-height: 1rem;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: -12%;
+			width: 13px;
+			height: 17px;
+			transform: translateY(-50%);
+			background: url(../img/header/header__gpsmark.png);
+		}
+	}
+}
