@@ -8,6 +8,10 @@
     "type": "git",
     "url": "git://github.com/alexsoin/gulp-start-projet.git"
   },
+  "scripts": {
+    "dev": "webpack serve --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
+  },
   "dependencies": {
     "bootstrap": "^4.2.1",
     "owl-carousel": "^1.0.0",
@@ -15,7 +19,10 @@
     "popper.js": "^1.14.6"
   },
   "devDependencies": {
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.1.1",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-cache": "^1.0.2",
@@ -28,8 +35,15 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify-es": "^1.0.4",
     "gulp-version-number": "^0.2.3",
+    "html-webpack-plugin": "^5.3.1",
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^6.0.1",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   }
 }

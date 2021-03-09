@@ -8462,6 +8462,10 @@ body {
 .repair .intro__audio .intro__btn {
   bottom: -35%; }
 
+@media screen and (max-width: 1199px) {
+  .repair .intro__items {
+    width: auto; } }
+
 .quiz {
   padding-bottom: 3rem; }
 
