@@ -12,7 +12,9 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     
-    <link href="css/main.css?v=70e854c485581c0c351c8f1593cdae7c" rel="stylesheet" />
+
+    <link href="css/main.css?v=3a6dea2287151a04ad76438f5955f0ae" rel="stylesheet" />
+
     
     <title>Home</title>
 </head>
@@ -25,26 +27,45 @@
                 <button type="button" class="close position-absolute" style="right: 2rem; top: 1rem; font-size: 28px" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <div class="support-form__title">Мы свяжемся с вами :)</div>
-                <form action="" class="text-center">
-                    <div class="form-group">
-                        <input name="name" class="form-support__control name" type="text" placeholder="Ваше имя">
-                    </div>
-                    <div class="form-group mb-5">
-                        <input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона">
-                    </div>
-                    <div class="form-group mb-3 support-form__btn">
-                        <button class="btn-default_prgm" type="button" onclick="send(event)">
-                            <span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
-                        </button>
-                    </div>
-                    <div class="form-group">
-                        <div class="support-form__agree">
-                            Заполняя данную форму вы подтверждаете согласие <br>
-                            с нашей политикой обработки персональных данных
+                <div class="support-form_before" style="opacity: 1;">
+                    <div class="support-form__title">Мы свяжемся с вами :)</div>
+                    <form action="" class="text-center needs-validation" novalidate>
+                        <div class="form-group">
+                            <input name="name" class="form-support__control name" type="text" placeholder="Ваше имя" required />
+                            <div class="invalid-feedback name-error">
+                                Пожалуйста, введите имя
+                            </div>
                         </div>
+                        <div class="form-group mb-5">
+                            <input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона" required />
+                            <div class="invalid-feedback phone-error">
+                                Пожалуйста, введите номер телефона
+                            </div>
+                        </div>
+                        <div class="form-group mb-3 support-form__btn">
+                            <button class="btn-default_prgm" type="button" onclick="send(event)">
+                                <span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
+                            </button>
+                            <img src="img/modal/modal__call.png" alt="" class="btn-default__call" />
+                        </div>
+                        <div class="form-group">
+                            <div class="support-form__agree">
+                                Заполняя данную форму вы подтверждаете согласие <br />
+                                с нашей политикой обработки персональных данных
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="support-form_after" style="opacity: 0">
+                    <div class="support-form__success-text mb-4">Спасибо, расчет в обработке!</div>
+                    <div class="support-form__success-img mb-4">
+                        <img class="img-fluid" src="img/form-success.png" alt="">
                     </div>
-                </form>
+                    <div class="support-form__success-text">
+                        Вы сможете повторить запрос через: <br>
+                        <span class="support-form__success-count">10</span> <span class="support-form__success-word">секунд</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -100,17 +121,22 @@
     				<div class="header__item d-none d-xl-block"><a href="#contacts">Контакты</a></div>
     				<div class="header__item d-none d-xl-block"><a href="http://remont-tv-ufa.ru/content/sertifikaty" target="_blank">Сертификаты</a></div>
     
-    				<div class="header__item d-block d-xl-none">
-    					Калькулятор
-    					<img class="pl-1" src="img/header/header__calc.png" alt="" />
-    				</div>
-    				<div class="header__item d-block d-xl-none">
-    					Написать мастеру
-    					<img class="pl-1" src="img/header/header__mail.png" alt="" />
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+          <div class="header__item d-block d-xl-none">
+                        <a href="#quiz">
+                            Калькулятор
+                            <img class="pl-1" src="img/header__calc.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__item d-block d-xl-none">
+                        <a href="tel:+73472286710">
+                            Написать мастеру
+                            <img class="pl-1" src="img/header__mail.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
     <section class="intro">
     	<div class="intro__container container">
@@ -415,27 +441,46 @@
 													</div>
 													<div class="col-xl-6">
 														<div class="support-form">
-															<div class="support-form__title">Мы свяжемся с вами :)</div>
-															<form action="" class="text-center">
-																<div class="form-group">
-																	<input name="name" class="form-support__control name" type="text" placeholder="Ваше имя" />
-																</div>
-																<div class="form-group mb-5">
-																	<input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона" />
-																</div>
-																<div class="form-group mb-3 support-form__btn">
-																	<button class="btn-default_prgm" type="button" onclick="send(event)">
-																		<span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
-																	</button>
-																	<img src="img/button/button__call-white.png" alt="" class="btn-default__call" />
-																</div>
-																<div class="form-group">
-																	<div class="support-form__agree">
-																		Заполняя данную форму вы подтверждаете согласие <br />
-																		с нашей политикой обработки персональных данных
+															<div class="support-form_before" style="opacity: 1;">
+																<div class="support-form__title">Мы свяжемся с вами :)</div>
+																<form action="" class="text-center needs-validation" novalidate>
+																	<div class="form-group">
+																		<input name="name" class="form-support__control name" type="text" placeholder="Ваше имя" required />
+																		<div class="invalid-feedback name-error">
+																			Пожалуйста, введите имя
+																		</div>
 																	</div>
+																	<div class="form-group mb-5">
+																		<input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона" required />
+																		<div class="invalid-feedback phone-error">
+																			Пожалуйста, введите номер телефона
+																		</div>
+
+																	</div>
+																	<div class="form-group mb-3 support-form__btn">
+																		<button class="btn-default_prgm" type="button" onclick="send(event)">
+																			<span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
+																		</button>
+																		<img src="img/modal/modal__call.png" alt="" class="btn-default__call" />
+																	</div>
+																	<div class="form-group">
+																		<div class="support-form__agree">
+																			Заполняя данную форму вы подтверждаете согласие <br />
+																			с нашей политикой обработки персональных данных
+																		</div>
+																	</div>
+																</form>
+															</div>
+															<div class="support-form_after" style="opacity: 0">
+																<div class="support-form__success-text mb-4">Спасибо, расчет в обработке!</div>
+																<div class="support-form__success-img mb-4">
+																	<img class="img-fluid" src="img/form-success.png" alt="">
 																</div>
-															</form>
+																<div class="support-form__success-text">
+																	Вы сможете повторить запрос через: <br>
+																	<span class="support-form__success-count">10</span> <span class="support-form__success-word">секунд</span>
+																</div>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -451,7 +496,7 @@
 		</div>
 	</div>
 </section>
-<!--//= template/feedback.html-->
+
 <section class="service">
 	<div class="service__container">
 		<div class="container">
@@ -799,27 +844,45 @@
 						<img src="img/support__img-right.png" alt="" />
 					</div>
 					<div class="support-form">
-						<div class="support-form__title">Мы свяжемся с вами :)</div>
-						<form action="" class="text-center">
-							<div class="form-group">
-								<input name="name" class="form-support__control name" type="text" placeholder="Ваше имя" />
-							</div>
-							<div class="form-group mb-5">
-								<input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона" />
-							</div>
-							<div class="form-group mb-3 support-form__btn">
-								<button class="btn-default_prgm" type="button" onclick="send(event)">
-									<span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
-								</button>
-								<img src="img/button/button__call-white.png" alt="" class="btn-default__call" />
-							</div>
-							<div class="form-group">
-								<div class="support-form__agree">
-									Заполняя данную форму вы подтверждаете согласие <br />
-									с нашей политикой обработки персональных данных
+						<div class="support-form_before" style="opacity: 1;">
+							<div class="support-form__title">Мы свяжемся с вами :)</div>
+							<form action="" class="text-center needs-validation" novalidate>
+								<div class="form-group">
+									<input name="name" class="form-support__control name" type="text" placeholder="Ваше имя" required />
+									<div class="invalid-feedback name-error">
+										Пожалуйста, введите имя
+									</div>
 								</div>
+								<div class="form-group mb-5">
+									<input name="phone" class="form-support__control phone" type="tel" placeholder="Номер телефона" required />
+									<div class="invalid-feedback phone-error">
+										Пожалуйста, введите номер телефона
+									</div>
+								</div>
+								<div class="form-group mb-3 support-form__btn">
+									<button class="btn-default_prgm" type="button" onclick="send(event)">
+										<span class="btn-default__text" style="font-style: normal">Перезвоните мне</span>
+									</button>
+									<img src="img/modal/modal__call.png" alt="" class="btn-default__call" />
+								</div>
+								<div class="form-group">
+									<div class="support-form__agree">
+										Заполняя данную форму вы подтверждаете согласие <br />
+										с нашей политикой обработки персональных данных
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="support-form_after" style="opacity: 0">
+							<div class="support-form__success-text mb-4">Спасибо, расчет в обработке!</div>
+							<div class="support-form__success-img mb-4">
+								<img class="img-fluid" src="img/form-success.png" alt="">
 							</div>
-						</form>
+							<div class="support-form__success-text">
+								Вы сможете повторить запрос через: <br>
+								<span class="support-form__success-count">10</span> <span class="support-form__success-word">секунд</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -898,6 +961,8 @@
 	</div>
 </section>
 
+
 <script src="js/main.js?v=70e854c485581c0c351c8f1593cdae7c"></script>
+
 </body>
 </html>

@@ -55,6 +55,7 @@
 
 	& .intro__btn {
 		&::after {
+			pointer-events: none;
 			content: '';
 			position: absolute;
 			top: 9%;
@@ -140,7 +141,7 @@
 	}
 
 	& .intro__inst-1 {
-		animation: inst-1 12s infinite ease-in-out;
+		animation: inst-1 24s infinite ease-in-out;
 		position: absolute;
 		z-index: 1;
 		bottom: 29%;
@@ -151,7 +152,7 @@
 	}
 
 	& .intro__inst-2 {
-		animation: inst-2 12s infinite ease-in-out;
+		animation: inst-2 30s infinite ease-in-out;
 		position: absolute;
 		top: 18%;
 		left: -11%;
