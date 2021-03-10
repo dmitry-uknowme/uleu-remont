@@ -9123,6 +9123,8 @@ body {
   .scheme__bg {
     background: #f6f6f6;
     background: none; }
+  .scheme__title {
+    margin-bottom: 3rem; }
   .scheme-item__container {
     display: -ms-flexbox;
     display: flex;
@@ -9318,7 +9320,11 @@ body {
     text-align: center; } }
 
 .repair .reviews {
-  margin-top: 20rem; }
+  margin-top: 15rem; }
+
+@media screen and (max-width: 1199px) {
+  .repair .reviews {
+    margin-top: 15rem; } }
 
 .support {
   margin-bottom: 15rem; }

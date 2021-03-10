@@ -136,6 +136,14 @@
 
 .repair {
 	.reviews {
-		margin-top: 20rem;
+		margin-top: 15rem;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.repair {
+		.reviews {
+			margin-top: 15rem;
+		}
 	}
 }
