@@ -69,13 +69,15 @@
 			position: relative;
 		}
 		& .btn-default__call {
-			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-			border-radius: 50%;
-			padding: 20px;
-			margin-left: -25px;
-			backdrop-filter: blur(5px);
-			background: rgba(255, 255, 255, 0.1);
-			margin-bottom: 2%;
+			img:first-child {
+				box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+				border-radius: 50%;
+				padding: 20px;
+				margin-left: -25px;
+				backdrop-filter: blur(5px);
+				background: rgba(255, 255, 255, 0.1);
+				margin-bottom: 38%;
+			}
 		}
 	}
 
@@ -274,52 +276,80 @@
 			display: none;
 		}
 	}
-
-	.intro__items {
-		width: 600px;
-	}
-	.btn-default__call {
-		display: inline-block;
-		position: relative;
-		&::after {
-			content: '';
-			position: absolute;
-			top: -40%;
-			right: -287%;
-			width: 90px;
-			height: 70px;
-			background: url(../img/intro/intro__present.png) no-repeat;
-		}
-	}
-	.intro__tv,
-	.intro__iphone,
-	.intro__audio {
-		margin-top: 55px;
-		position: relative;
-		.intro__btn {
-			font-size: 18px;
-			position: absolute;
-			bottom: -70%;
-			left: 50%;
-			transform: translateX(-50%);
-			&::after {
-				display: none;
+	.intro {
+		.intro__item {
+			margin: auto;
+			&:first-child {
+				margin-left: 0;
 			}
-			button {
-				padding: 10px 30px;
+		}
+
+		.btn-default__call {
+			display: inline-block;
+			position: relative;
+			.btn__present {
+				position: absolute;
+				top: -40%;
+				right: -447%;
+				width: 90px;
+				height: 70px;
+				background: url(../img/intro/intro__present.png) no-repeat;
+				z-index: 1;
+				&::before {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: -62%;
+					width: 120px;
+					height: 33px;
+					background: url(../img/intro/intro__present-goto.png) no-repeat;
+					z-index: -1;
+				}
+				&::after {
+					position: absolute;
+					content: 'Забронировать \A подарок \A при рассчете';
+					white-space: pre;
+					top: 37%;
+					right: -175%;
+					font-size: 16px;
+					font-weight: 700;
+					color: #ababab;
+					text-transform: uppercase;
+					line-height: 1rem;
+					letter-spacing: 0.5px;
+				}
+			}
+		}
+		.intro__tv,
+		.intro__iphone,
+		.intro__audio {
+			margin-top: 55px;
+			position: relative;
+			.intro__btn {
 				font-size: 18px;
+				position: absolute;
+				bottom: -56%;
+				left: 50%;
+				transform: translateX(-50%);
+				&::after {
+					display: none;
+				}
+				button {
+					padding: 10px 30px;
+					font-size: 18px;
+				}
 			}
 		}
-	}
 
-	.intro__iphone {
-		.intro__btn {
-			bottom: -12%;
+		.intro__iphone {
+			.intro__btn {
+				bottom: -12%;
+			}
 		}
-	}
-	.intro__audio {
-		.intro__btn {
-			bottom: -35%;
+		.intro__audio {
+			.intro__btn {
+				bottom: -35%;
+			}
 		}
 	}
 
@@ -328,4 +358,58 @@
 	// 	width: 400px;
 	// 	height: 260px;
 	// }
+}
+
+@media screen and (max-width: 1199px) {
+	.repair {
+		.intro {
+			.intro__title {
+				font-size: 25px;
+			}
+
+			.intro__items {
+				justify-content: space-evenly;
+			}
+
+			.intro__item {
+				margin: 0;
+			}
+
+			.intro__tv,
+			.intro__iphone {
+				display: flex;
+				justify-content: center;
+				.intro__btn {
+					bottom: -40%;
+				}
+			}
+
+			.intro__iphone {
+				.intro__btn {
+					bottom: -20%;
+				}
+			}
+
+			.intro__audio {
+				display: flex;
+				justify-content: center;
+			}
+
+			.btn__present {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.repair {
+		.intro {
+			.btn__present {
+				display: none;
+			}
+		}
+	}
 }

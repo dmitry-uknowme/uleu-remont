@@ -8245,7 +8245,7 @@ body {
       height: 488px; }
     .intro .intro__btn .btn-default_prgm {
       position: relative; }
-    .intro .intro__btn .btn-default__call {
+    .intro .intro__btn .btn-default__call img:first-child {
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       border-radius: 50%;
       padding: 20px;
@@ -8253,7 +8253,7 @@ body {
       -webkit-backdrop-filter: blur(5px);
               backdrop-filter: blur(5px);
       background: rgba(255, 255, 255, 0.1);
-      margin-bottom: 2%; }
+      margin-bottom: 38%; }
   .intro .intro__items {
     margin-top: 4rem;
     display: -ms-flexbox;
@@ -8418,50 +8418,104 @@ body {
   .repair .intro__title::after {
     display: none; }
 
-.repair .intro__items {
-  width: 600px; }
+.repair .intro .intro__item {
+  margin: auto; }
+  .repair .intro .intro__item:first-child {
+    margin-left: 0; }
 
-.repair .btn-default__call {
+.repair .intro .btn-default__call {
   display: inline-block;
   position: relative; }
-  .repair .btn-default__call::after {
-    content: '';
+  .repair .intro .btn-default__call .btn__present {
     position: absolute;
     top: -40%;
-    right: -287%;
+    right: -447%;
     width: 90px;
     height: 70px;
-    background: url(../img/intro/intro__present.png) no-repeat; }
+    background: url(../img/intro/intro__present.png) no-repeat;
+    z-index: 1; }
+    .repair .intro .btn-default__call .btn__present::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -62%;
+      width: 120px;
+      height: 33px;
+      background: url(../img/intro/intro__present-goto.png) no-repeat;
+      z-index: -1; }
+    .repair .intro .btn-default__call .btn__present::after {
+      position: absolute;
+      content: 'Забронировать \A подарок \A при рассчете';
+      white-space: pre;
+      top: 37%;
+      right: -175%;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ababab;
+      text-transform: uppercase;
+      line-height: 1rem;
+      letter-spacing: 0.5px; }
 
-.repair .intro__tv,
-.repair .intro__iphone,
-.repair .intro__audio {
+.repair .intro .intro__tv,
+.repair .intro .intro__iphone,
+.repair .intro .intro__audio {
   margin-top: 55px;
   position: relative; }
-  .repair .intro__tv .intro__btn,
-  .repair .intro__iphone .intro__btn,
-  .repair .intro__audio .intro__btn {
+  .repair .intro .intro__tv .intro__btn,
+  .repair .intro .intro__iphone .intro__btn,
+  .repair .intro .intro__audio .intro__btn {
     font-size: 18px;
     position: absolute;
-    bottom: -70%;
+    bottom: -56%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-    .repair .intro__tv .intro__btn::after,
-    .repair .intro__iphone .intro__btn::after,
-    .repair .intro__audio .intro__btn::after {
+    .repair .intro .intro__tv .intro__btn::after,
+    .repair .intro .intro__iphone .intro__btn::after,
+    .repair .intro .intro__audio .intro__btn::after {
       display: none; }
-    .repair .intro__tv .intro__btn button,
-    .repair .intro__iphone .intro__btn button,
-    .repair .intro__audio .intro__btn button {
+    .repair .intro .intro__tv .intro__btn button,
+    .repair .intro .intro__iphone .intro__btn button,
+    .repair .intro .intro__audio .intro__btn button {
       padding: 10px 30px;
       font-size: 18px; }
 
-.repair .intro__iphone .intro__btn {
+.repair .intro .intro__iphone .intro__btn {
   bottom: -12%; }
 
-.repair .intro__audio .intro__btn {
+.repair .intro .intro__audio .intro__btn {
   bottom: -35%; }
+
+@media screen and (max-width: 1199px) {
+  .repair .intro .intro__title {
+    font-size: 25px; }
+  .repair .intro .intro__items {
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly; }
+  .repair .intro .intro__item {
+    margin: 0; }
+  .repair .intro .intro__tv,
+  .repair .intro .intro__iphone {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .repair .intro .intro__tv .intro__btn,
+    .repair .intro .intro__iphone .intro__btn {
+      bottom: -40%; }
+  .repair .intro .intro__iphone .intro__btn {
+    bottom: -20%; }
+  .repair .intro .intro__audio {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .repair .intro .btn__present::after {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .repair .intro .btn__present {
+    display: none; } }
 
 .quiz {
   padding-bottom: 3rem; }
