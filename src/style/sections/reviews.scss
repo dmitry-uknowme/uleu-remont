@@ -63,6 +63,13 @@
 	}
 }
 
+.reviews__btn {
+	& .btn-default {
+		position: relative;
+		z-index: 1;
+	}
+}
+
 .reviews-btn__next {
 	z-index: 10;
 	display: flex;
