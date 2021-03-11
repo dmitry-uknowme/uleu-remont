@@ -44,3 +44,39 @@
 // };
 //
 // inst();
+
+const burgerMenu = () => {
+	const burgerMenu = document.querySelector('.header__item_menu');
+	const burgerMenuBtns = document.querySelectorAll('.header__item_menu button');
+
+	let activeMenu = false;
+
+	const openBurger = (e) => {
+		e.target.classList.add('_active');
+		setTimeout(() => {
+			e.target.innerHTML = '✕';
+			activeMenu = true;
+		}, 500);
+	};
+
+	const closeBurger = (e) => {
+		e.target.classList.remove('_active');
+		setTimeout(() => {
+			e.target.innerHTML = '☰';
+			activeMenu = false;
+		}, 500);
+	};
+
+	burgerMenuBtns.forEach((menu, id) => {
+		menu.addEventListener('click', (e) => {
+			if (!activeMenu) {
+				openBurger(e);
+			} else {
+				closeBurger(e);
+			}
+		});
+		menu.addEventListener('blur', closeBurger);
+	});
+};
+
+burgerMenu();

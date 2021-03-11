@@ -66,6 +66,7 @@
 		display: flex;
 		padding: 25px 0;
 		justify-content: center;
+		align-items: center;
 
 		& .header__item {
 			cursor: pointer;
@@ -79,13 +80,70 @@
 			line-height: 12.16px;
 			text-align: left;
 			text-transform: uppercase;
+
+			&::after {
+				display: none;
+			}
+			&_menu {
+				display: flex;
+				align-items: center;
+				&_mobile {
+					display: none;
+				}
+				.dropdown-menu {
+					padding-bottom: 0;
+					i {
+						color: blue;
+						font-size: 15px;
+						margin-left: 10px;
+					}
+				}
+				&-btn {
+					transition: all 0.7s;
+					font-size: 20px;
+					text-transform: uppercase;
+					padding: 0;
+					&:hover {
+						// color: red;
+					}
+					&:focus {
+						outline: none;
+						box-shadow: none;
+					}
+					&:active {
+						outline: none;
+					}
+				}
+
+				&-btn._active {
+					color: red;
+					transform: rotate(360deg);
+					// box-shadow: rgba(255, 0, 0, 0.4) 0px 54px 55px;
+				}
+
+				.dropdown-header {
+					color: red;
+					border-bottom: 1px solid black;
+				}
+				a {
+					transition: all 0.5s;
+					font-size: 10px;
+					padding: 0;
+					margin: 0.5rem 1.5rem;
+					background: transparent;
+
+					&:hover {
+						transform: scaleX(1.1);
+						color: red;
+					}
+				}
+			}
 			& a {
 				color: black;
 				text-decoration: none;
 			}
 		}
-
-		& .header__item:after {
+		.header__item:after {
 			content: '';
 			position: absolute;
 			bottom: -5px;
@@ -97,7 +155,7 @@
 			transition: all 0.5s;
 		}
 
-		& .header__item:hover:after {
+		.header__item:hover:after {
 			opacity: 1;
 			width: 100%;
 		}
@@ -167,6 +225,26 @@
 			height: 17px;
 			transform: translateY(-50%);
 			background: url(../img/header/header__gpsmark.png);
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		.header_bottom {
+			position: relative;
+		}
+		.header__items_bottom {
+			.header__item_menu {
+				display: none;
+				&_mobile {
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
 		}
 	}
 }

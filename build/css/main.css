@@ -8109,7 +8109,9 @@ body {
     display: flex;
     padding: 25px 0;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
     .header .header__items_bottom .header__item {
       cursor: pointer;
       position: relative;
@@ -8122,6 +8124,48 @@ body {
       line-height: 12.16px;
       text-align: left;
       text-transform: uppercase; }
+      .header .header__items_bottom .header__item::after {
+        display: none; }
+      .header .header__items_bottom .header__item_menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center; }
+        .header .header__items_bottom .header__item_menu_mobile {
+          display: none; }
+        .header .header__items_bottom .header__item_menu .dropdown-menu {
+          padding-bottom: 0; }
+          .header .header__items_bottom .header__item_menu .dropdown-menu i {
+            color: blue;
+            font-size: 15px;
+            margin-left: 10px; }
+        .header .header__items_bottom .header__item_menu-btn {
+          transition: all 0.7s;
+          font-size: 20px;
+          text-transform: uppercase;
+          padding: 0; }
+          .header .header__items_bottom .header__item_menu-btn:focus {
+            outline: none;
+            box-shadow: none; }
+          .header .header__items_bottom .header__item_menu-btn:active {
+            outline: none; }
+        .header .header__items_bottom .header__item_menu-btn._active {
+          color: red;
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg); }
+        .header .header__items_bottom .header__item_menu .dropdown-header {
+          color: red;
+          border-bottom: 1px solid black; }
+        .header .header__items_bottom .header__item_menu a {
+          transition: all 0.5s;
+          font-size: 10px;
+          padding: 0;
+          margin: 0.5rem 1.5rem;
+          background: transparent; }
+          .header .header__items_bottom .header__item_menu a:hover {
+            -webkit-transform: scaleX(1.1);
+                    transform: scaleX(1.1);
+            color: red; }
       .header .header__items_bottom .header__item a {
         color: black;
         text-decoration: none; }
@@ -8194,6 +8238,19 @@ body {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     background: url(../img/header/header__gpsmark.png); }
+
+@media screen and (max-width: 767px) {
+  .header .header_bottom {
+    position: relative; }
+  .header .header__items_bottom .header__item_menu {
+    display: none; }
+    .header .header__items_bottom .header__item_menu_mobile {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); } }
 
 .intro {
   margin-bottom: 3rem; }
