@@ -81,9 +81,6 @@
 			text-align: left;
 			text-transform: uppercase;
 
-			&::after {
-				display: none;
-			}
 			&_menu {
 				display: flex;
 				align-items: center;
@@ -146,7 +143,7 @@
 		.header__item:after {
 			content: '';
 			position: absolute;
-			bottom: -5px;
+			bottom: -7px;
 			left: 0;
 			height: 2px;
 			background: red;
@@ -158,6 +155,17 @@
 		.header__item:hover:after {
 			opacity: 1;
 			width: 100%;
+		}
+
+		.header__item_menu {
+			&::after {
+				display: none;
+			}
+			&_mobile {
+				&::after {
+					display: none;
+				}
+			}
 		}
 
 		& .header__text-medium {

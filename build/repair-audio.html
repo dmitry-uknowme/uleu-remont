@@ -11,8 +11,8 @@
     <meta name="googlebot" content="index, follow" />
     <meta name="google" content="notranslate" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css?v=f7807046c7e1a6276858e73549b58a24" />
-    <link href="css/main.css?v=f7807046c7e1a6276858e73549b58a24" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+    <link href="css/main.css" rel="stylesheet" />
     
     <title>Home</title>
     <title>Ремонт аудиотехники</title>
@@ -83,7 +83,10 @@
     					<img src="img/header/header__border.png" alt="" />
     				</div>
     				<div class="header__item_pdf d-none d-xl-block d-none d-xl-block header__text-bold">
-    					<a href="https://api.whatsapp.com/send/?phone=79173413601&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%A5%D0%BE%D1%87%D1%83+%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C+%D0%BF%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82.%0A%0A&app_absent=0" target="_blank">
+    					<a
+    						href="https://api.whatsapp.com/send/?phone=79173413601&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%A5%D0%BE%D1%87%D1%83+%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C+%D0%BF%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82.%0A%0A&app_absent=0"
+    						target="_blank"
+    					>
     						Получить прайс-лист в Whatsapp
     						<span>Вам автоматически поступит PDF-файл</span>
     					</a>
@@ -110,6 +113,26 @@
     		</div>
     		<div class="header_bottom">
     			<div class="container header__items_bottom">
+    				<div class="header__item header__item"><a href="./">Главная</a></div>
+    				<div class="header__item header__item_menu">
+    					<button class="btn header__item_menu-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">☰</button>
+    					<div class="header__item_menu-text">Услуги</div>
+    					<div class="dropdown-menu header__item_menu-dropdown" aria-labelledby="dropdownMenuButton">
+    						<h6 class="dropdown-header">Услуги</h6>
+    						<a class="dropdown-item" href="./repair-smartphone.html">Ремонт смартфонов</a>
+    						<a class="dropdown-item" href="./repair-audio.html">Ремонт аудиотехники</a>
+    						<a class="dropdown-item" href="./repair-tv.html">Ремонт телевизоров</a>
+    					</div>
+    				</div>
+    				<div class="header__item header__item_menu header__item_menu_mobile">
+    					<button class="btn header__item_menu-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">☰</button>
+    					<div class="dropdown-menu header__item_menu-dropdown" aria-labelledby="dropdownMenuButton">
+    						<h6 class="dropdown-header">Услуги</h6>
+    						<a class="dropdown-item" href="./repair-smartphone.html">Ремонт смартфонов<i class="bi bi-phone"></i></a>
+    						<a class="dropdown-item" href="./repair-audio.html">Ремонт аудиотехники<i class="bi bi-music-note-beamed"></i></a>
+    						<a class="dropdown-item" href="./repair-tv.html">Ремонт телевизоров<i class="bi bi-tv"></i></a>
+    					</div>
+    				</div>
     				<div class="header__item d-none d-xl-block"><a href="http://remont-tv-ufa.ru/zakaz" target="_blank">Проверка заказа онлайн</a></div>
     				<div class="header__item d-none d-xl-block"><a href="https://yandex.ru/maps/-/CCUQF4CQhD" target="_blank">Схема проезда</a></div>
     				<div class="header__item d-none d-xl-block"><a href="http://remont-tv-ufa.ru/services" target="_blank">Услуги и цены</a></div>
@@ -604,6 +627,6 @@
 		</div>
 	</div>
 </section>
-<script src="js/main.js?v=f7807046c7e1a6276858e73549b58a24"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

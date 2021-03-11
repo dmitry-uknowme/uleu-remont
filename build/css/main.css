@@ -8124,8 +8124,6 @@ body {
       line-height: 12.16px;
       text-align: left;
       text-transform: uppercase; }
-      .header .header__items_bottom .header__item::after {
-        display: none; }
       .header .header__items_bottom .header__item_menu {
         display: -ms-flexbox;
         display: flex;
@@ -8172,7 +8170,7 @@ body {
     .header .header__items_bottom .header__item:after {
       content: '';
       position: absolute;
-      bottom: -5px;
+      bottom: -7px;
       left: 0;
       height: 2px;
       background: red;
@@ -8182,6 +8180,10 @@ body {
     .header .header__items_bottom .header__item:hover:after {
       opacity: 1;
       width: 100%; }
+    .header .header__items_bottom .header__item_menu::after {
+      display: none; }
+    .header .header__items_bottom .header__item_menu_mobile::after {
+      display: none; }
     .header .header__items_bottom .header__text-medium {
       white-space: nowrap;
       font-family: "Montserrat Medium", sans-serif;
