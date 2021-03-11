@@ -8021,6 +8021,9 @@ body {
   line-height: 24.38px; }
   .btn-default .btn-default__text {
     display: inline-block; }
+  .btn-default:hover {
+    color: #ffffff;
+    text-decoration: none; }
 
 .btn-default_prgm {
   margin-left: 12px;
@@ -8042,6 +8045,9 @@ body {
     display: inline-block;
     -webkit-transform: skew(-20deg);
             transform: skew(-20deg); }
+  .btn-default_prgm:hover {
+    color: #ffffff;
+    text-decoration: none; }
 
 @media screen and (max-width: 450px) {
   .btn-default, .btn-default_prgm {
@@ -8335,6 +8341,16 @@ body {
     -webkit-transform: rotate(0);
             transform: rotate(0); } }
 
+#intro-btn {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  border-radius: 50%;
+  padding: 20px;
+  margin-left: -25px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 2%; }
+
 @-webkit-keyframes inst-2 {
   0% {
     -webkit-transform: rotate(0);
@@ -8448,7 +8464,8 @@ body {
       content: 'Забронировать \A подарок \A при рассчете';
       white-space: pre;
       top: 37%;
-      right: -175%;
+      right: -180%;
+      font-family: "Montserrat Medium", sans-serif;
       font-size: 16px;
       font-weight: 700;
       color: #ababab;
@@ -8493,7 +8510,14 @@ body {
     -ms-flex-pack: space-evenly;
         justify-content: space-evenly; }
   .repair .intro .intro__item {
-    margin: 0; }
+    margin: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem; }
+    .repair .intro .intro__item:first-child {
+      margin-left: 0; }
+    .repair .intro .intro__item:last-child {
+      margin-right: 0; }
   .repair .intro .intro__tv,
   .repair .intro .intro__iphone {
     display: -ms-flexbox;
@@ -8514,6 +8538,8 @@ body {
     display: none; } }
 
 @media screen and (max-width: 767px) {
+  .repair .intro__title {
+    font-size: 20px !important; }
   .repair .intro .btn__present {
     display: none; } }
 
@@ -9267,7 +9293,6 @@ body {
       align-items: center; }
 
 .review-item__content {
-  margin-bottom: 1.5rem;
   max-width: 513px;
   font-family: "Montserrat Medium", sans-serif;
   font-weight: 500; }
@@ -9474,6 +9499,7 @@ body {
 
 .contacts {
   position: relative;
+  z-index: 1;
   padding: 1rem 0;
   background-image: url("../img/contacts/contacts__bg.png");
   background-repeat: no-repeat;

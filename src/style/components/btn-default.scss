@@ -16,6 +16,11 @@
   & .btn-default__text {
     display: inline-block;
   }
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
 
 .btn-default_prgm {
@@ -39,6 +44,11 @@
   & .btn-default__text {
     display: inline-block;
     transform: skew(-20deg);
+  }
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
   }
 }
 

@@ -177,6 +177,17 @@
 	}
 }
 
+#intro-btn {
+	box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+	border-radius: 50%;
+	padding: 20px;
+	margin-left: -25px;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	background: rgba(255, 255, 255, 0.1);
+	margin-bottom: 2%;
+}
+
 @keyframes inst-2 {
 	0% {
 		transform: rotate(0);
@@ -310,7 +321,8 @@
 					content: 'Забронировать \A подарок \A при рассчете';
 					white-space: pre;
 					top: 37%;
-					right: -175%;
+					right: -180%;
+					font-family: $font-medium;
 					font-size: 16px;
 					font-weight: 700;
 					color: #ababab;
@@ -373,6 +385,17 @@
 
 			.intro__item {
 				margin: 0;
+				margin-left: 0.5rem;
+				margin-right: 0.5rem;
+				margin-bottom: 1rem;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 
 			.intro__tv,
@@ -406,6 +429,10 @@
 
 @media screen and (max-width: 767px) {
 	.repair {
+		.intro__title {
+			font-size: 20px !important;
+		}
+
 		.intro {
 			.btn__present {
 				display: none;
