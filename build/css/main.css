@@ -8004,7 +8004,12 @@ a.text-dark:hover, a.text-dark:focus {
   src: url("../fonts/Montserrat-Regular.ttf"); }
 
 body {
+  transition: all 0.3s;
+  overflow-y: auto;
   overflow-x: hidden; }
+
+body._fixed {
+  overflow: hidden; }
 
 .btn-default {
   padding: 20px 40px;

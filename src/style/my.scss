@@ -1,8 +1,11 @@
 body {
+	transition: all 0.3s;
+	overflow-y: auto;
 	overflow-x: hidden;
-	// Если так сделать, то фон будет 'рывками'
-	// -понял
-	//background: url(../img/intro/intro__bg.png);
+}
+
+body._fixed {
+	overflow: hidden;
 }
 
 // *,

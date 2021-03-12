@@ -22152,6 +22152,7 @@ $('.reviews-btn__next').click(function () {
 // inst();
 
 const burgerMenu = () => {
+	const body = document.body;
 	const burgerMenus = document.querySelectorAll('.header__item_menu');
 	const burgerMenuBtns = document.querySelectorAll('.header__item_menu-btn');
 	const burgerMenuTexts = document.querySelectorAll('.header__item_menu-text');
@@ -22188,7 +22189,7 @@ const burgerMenu = () => {
 
 		if (isMobile) {
 			fullMobileMenu.classList.add('_active');
-			document.body.style.overflow = 'hidden';
+			setTimeout(() => body.classList.add('_fixed'), 300);
 			highlightLink();
 		}
 	};
@@ -22205,7 +22206,7 @@ const burgerMenu = () => {
 
 		if (isMobile) {
 			fullMobileMenu.classList.remove('_active');
-			document.body.style.overflow = 'auto';
+			setTimeout(() => body.classList.remove('_fixed'), 300);
 		}
 	};
 
@@ -22235,7 +22236,6 @@ const burgerMenu = () => {
 			}
 		});
 		menu.addEventListener('blur', (e) => {
-			console.log('blur');
 			const node = e.target.previousElementSibling;
 			!isMobile ? closeBurger(node) : '';
 		});
