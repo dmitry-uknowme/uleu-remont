@@ -22152,18 +22152,22 @@ $('.reviews-btn__next').click(function () {
 // inst();
 
 const burgerMenu = () => {
-	const burgerMenu = document.querySelector('.header__item_menu');
+	const burgerMenus = document.querySelectorAll('.header__item_menu');
 	const burgerMenuBtns = document.querySelectorAll('.header__item_menu button');
+	const burgerMenuTexts = document.querySelectorAll('.header__item_menu-text');
 	const fullMobileMenu = document.querySelector('.header__menu_mobile_full');
 
-	const isMobile = window.innerWidth <= 767;
+	const isMobile = window.innerWidth <= 767 || navigator.userAgent.match(/Android/i, /webOS/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i);
 
 	let activeMenu = false;
 
-	const openBurger = (e) => {
-		e.target.classList.add('_active');
+	const openBurger = (node) => {
+		if (activeMenu) {
+			return false;
+		}
+		node.classList.add('_active');
 		setTimeout(() => {
-			e.target.innerHTML = '✕';
+			node.innerHTML = '✕';
 			activeMenu = true;
 		}, 500);
 
@@ -22173,10 +22177,13 @@ const burgerMenu = () => {
 		}
 	};
 
-	const closeBurger = (e) => {
-		e.target.classList.remove('_active');
+	const closeBurger = (node) => {
+		if (!activeMenu) {
+			return false;
+		}
+		node.classList.remove('_active');
 		setTimeout(() => {
-			e.target.innerHTML = '☰';
+			node.innerHTML = '☰';
 			activeMenu = false;
 		}, 500);
 
@@ -22188,14 +22195,28 @@ const burgerMenu = () => {
 
 	burgerMenuBtns.forEach((menu, id) => {
 		menu.addEventListener('click', (e) => {
+			const node = e.target;
 			if (!activeMenu) {
-				openBurger(e);
+				openBurger(node);
 			} else {
-				closeBurger(e);
+				closeBurger(node);
 			}
 		});
+
 		menu.addEventListener('blur', (e) => {
-			!isMobile ? closeBurger(e) : '';
+			const node = e.target;
+			!isMobile ? closeBurger() : '';
+		});
+	});
+
+	burgerMenuTexts.forEach((menu, id) => {
+		menu.addEventListener('click', (e) => {
+			const node = e.target.previousElementSibling;
+			if (!activeMenu) {
+				openBurger(node);
+			} else {
+				closeBurger(node);
+			}
 		});
 	});
 };

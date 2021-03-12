@@ -146,10 +146,12 @@
 					}
 				}
 				&-btn {
+					// pointer-events: none;
 					transition: all 0.7s;
 					font-size: 20px;
 					text-transform: uppercase;
 					padding: 0;
+
 					&:hover {
 						// color: red;
 					}
@@ -160,6 +162,9 @@
 					&:active {
 						outline: none;
 					}
+				}
+				&-text {
+					// pointer-events: none;
 				}
 
 				&-btn._active {
