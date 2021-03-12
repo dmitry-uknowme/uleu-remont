@@ -22153,13 +22153,28 @@ $('.reviews-btn__next').click(function () {
 
 const burgerMenu = () => {
 	const burgerMenus = document.querySelectorAll('.header__item_menu');
-	const burgerMenuBtns = document.querySelectorAll('.header__item_menu button');
+	const burgerMenuBtns = document.querySelectorAll('.header__item_menu-btn');
 	const burgerMenuTexts = document.querySelectorAll('.header__item_menu-text');
 	const fullMobileMenu = document.querySelector('.header__menu_mobile_full');
 
 	const isMobile = window.innerWidth <= 767 || navigator.userAgent.match(/Android/i, /webOS/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i);
 
 	let activeMenu = false;
+
+	const highlightLink = () => {
+		const pageHref = window.location.href;
+		const currentRoute = pageHref.split('/')[pageHref.split('/').length - 1];
+		const linksList = document.querySelector('.header__menu_mobile_full ul');
+
+		for (let i = 0; i < linksList.children.length; i++) {
+			const linkHref = linksList.children[i].children[0].getAttribute('href');
+			if (linkHref) {
+				if (linkHref.includes(currentRoute)) linksList.children[i].children[0].style.color = 'red';
+			} else {
+				linksList.children[0].style.color = 'red';
+			}
+		}
+	};
 
 	const openBurger = (node) => {
 		if (activeMenu) {
@@ -22174,6 +22189,7 @@ const burgerMenu = () => {
 		if (isMobile) {
 			fullMobileMenu.classList.add('_active');
 			document.body.style.overflow = 'hidden';
+			highlightLink();
 		}
 	};
 
@@ -22205,7 +22221,7 @@ const burgerMenu = () => {
 
 		menu.addEventListener('blur', (e) => {
 			const node = e.target;
-			!isMobile ? closeBurger() : '';
+			!isMobile ? closeBurger(node) : '';
 		});
 	});
 
@@ -22217,6 +22233,11 @@ const burgerMenu = () => {
 			} else {
 				closeBurger(node);
 			}
+		});
+		menu.addEventListener('blur', (e) => {
+			console.log('blur');
+			const node = e.target.previousElementSibling;
+			!isMobile ? closeBurger(node) : '';
 		});
 	});
 };
