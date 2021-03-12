@@ -22170,8 +22170,6 @@ const burgerMenu = () => {
 		if (isMobile) {
 			fullMobileMenu.classList.add('_active');
 			document.body.style.overflow = 'hidden';
-		} else {
-			document.addEventListener('mouseup', handleCloseOut)
 		}
 	};
 
@@ -22185,8 +22183,6 @@ const burgerMenu = () => {
 		if (isMobile) {
 			fullMobileMenu.classList.remove('_active');
 			document.body.style.overflow = 'auto';
-		} else {
-			document.removeEventListener('mouseup', handleCloseOut)
 		}
 	};
 
