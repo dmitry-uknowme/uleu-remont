@@ -438,5 +438,29 @@
 				display: none;
 			}
 		}
+		.intro__tv,
+		.intro__iphone,
+		.intro__audio {
+			display: none !important;
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.repair {
+		.intro {
+			.intro__btn {
+				.btn-default__call img:first-child {
+					box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+					border-radius: 50%;
+					padding: 9px;
+					margin-left: -3px;
+					-webkit-backdrop-filter: blur(5px);
+					backdrop-filter: blur(5px);
+					background: rgba(255, 255, 255, 0.4);
+					margin-bottom: 23%;
+				}
+			}
+		}
 	}
 }
