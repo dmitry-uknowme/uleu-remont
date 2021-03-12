@@ -22154,6 +22154,9 @@ $('.reviews-btn__next').click(function () {
 const burgerMenu = () => {
 	const burgerMenu = document.querySelector('.header__item_menu');
 	const burgerMenuBtns = document.querySelectorAll('.header__item_menu button');
+	const fullMobileMenu = document.querySelector('.header__menu_mobile_full');
+
+	const isMobile = window.innerWidth <= 767;
 
 	let activeMenu = false;
 
@@ -22163,6 +22166,11 @@ const burgerMenu = () => {
 			e.target.innerHTML = '✕';
 			activeMenu = true;
 		}, 500);
+
+		if (isMobile) {
+			fullMobileMenu.classList.add('_active');
+			document.body.style.overflow = 'hidden';
+		}
 	};
 
 	const closeBurger = (e) => {
@@ -22171,6 +22179,11 @@ const burgerMenu = () => {
 			e.target.innerHTML = '☰';
 			activeMenu = false;
 		}, 500);
+
+		if (isMobile) {
+			fullMobileMenu.classList.remove('_active');
+			document.body.style.overflow = 'auto';
+		}
 	};
 
 	burgerMenuBtns.forEach((menu, id) => {
@@ -22181,7 +22194,9 @@ const burgerMenu = () => {
 				closeBurger(e);
 			}
 		});
-		menu.addEventListener('blur', closeBurger);
+		menu.addEventListener('blur', (e) => {
+			!isMobile ? closeBurger() : '';
+		});
 	});
 };
 
