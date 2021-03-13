@@ -22164,7 +22164,7 @@ const burgerMenu = () => {
 
 	const highlightLink = () => {
 		const pageHref = window.location.href;
-		const currentRoute = pageHref.split('/')[pageHref.split('/').length - 1];
+		const currentRoute = pageHref.split('/')[pageHref.split('/').length - 1] || './index';
 		const linksList = document.querySelector('.header__menu_mobile_full ul');
 
 		for (let i = 0; i < linksList.children.length; i++) {

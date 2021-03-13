@@ -23,6 +23,9 @@
 			height: 170px;
 			width: 170px;
 		}
+		&_mobile {
+			display: none;
+		}
 
 		& .intro__title_red {
 			color: #f00303;
@@ -298,38 +301,38 @@
 		.btn-default__call {
 			display: inline-block;
 			position: relative;
-			.btn__present {
+		}
+		.btn__present {
+			position: absolute;
+			top: -40%;
+			right: -447%;
+			width: 90px;
+			height: 70px;
+			background: url(../img/intro/intro__present.png) no-repeat;
+			z-index: 1;
+			&::before {
+				content: '';
 				position: absolute;
-				top: -40%;
-				right: -447%;
-				width: 90px;
-				height: 70px;
-				background: url(../img/intro/intro__present.png) no-repeat;
-				z-index: 1;
-				&::before {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: -62%;
-					width: 120px;
-					height: 33px;
-					background: url(../img/intro/intro__present-goto.png) no-repeat;
-					z-index: -1;
-				}
-				&::after {
-					position: absolute;
-					content: 'Забронировать \A подарок \A при рассчете';
-					white-space: pre;
-					top: 37%;
-					right: -180%;
-					font-family: $font-medium;
-					font-size: 16px;
-					font-weight: 700;
-					color: #ababab;
-					text-transform: uppercase;
-					line-height: 1rem;
-					letter-spacing: 0.5px;
-				}
+				bottom: 0;
+				left: -62%;
+				width: 120px;
+				height: 33px;
+				background: url(../img/intro/intro__present-goto.png) no-repeat;
+				z-index: -1;
+			}
+			&::after {
+				position: absolute;
+				content: 'Забронировать \A подарок \A при рассчете';
+				white-space: pre;
+				top: 37%;
+				right: -180%;
+				font-family: $font-medium;
+				font-size: 16px;
+				font-weight: 700;
+				color: #ababab;
+				text-transform: uppercase;
+				line-height: 1rem;
+				letter-spacing: 0.5px;
 			}
 		}
 		.intro__tv,
@@ -346,6 +349,9 @@
 				&::after {
 					display: none;
 				}
+				&_mobile {
+					display: none;
+				}
 				button {
 					padding: 10px 30px;
 					font-size: 18px;
@@ -353,74 +359,65 @@
 			}
 		}
 
-		.intro__iphone {
-			.intro__btn {
-				bottom: -12%;
-			}
-		}
-		.intro__audio {
-			.intro__btn {
-				bottom: -35%;
-			}
-		}
+		// .intro__tv {
+		// 	background: url(../img/intro/intro__tv.png);
+		// 	width: 400px;
+		// 	height: 260px;
+		// }
 	}
 
-	// .intro__tv {
-	// 	background: url(../img/intro/intro__tv.png);
-	// 	width: 400px;
-	// 	height: 260px;
-	// }
-}
-
-@media screen and (max-width: 1199px) {
-	.repair {
-		.intro {
-			.intro__title {
-				font-size: 25px;
-			}
-
-			.intro__items {
-				justify-content: space-evenly;
-			}
-
-			.intro__item {
-				margin: 0;
-				margin-left: 0.5rem;
-				margin-right: 0.5rem;
-				margin-bottom: 1rem;
-
-				&:first-child {
-					margin-left: 0;
+	@media screen and (max-width: 1199px) {
+		.repair {
+			.intro {
+				.intro__title {
+					font-size: 25px;
 				}
 
-				&:last-child {
-					margin-right: 0;
+				.intro__items {
+					justify-content: space-evenly;
 				}
-			}
 
-			.intro__tv,
-			.intro__iphone {
-				display: flex;
-				justify-content: center;
-				.intro__btn {
-					bottom: -40%;
+				.intro__item {
+					margin: 0;
+					margin-left: 0.5rem;
+					margin-right: 0.5rem;
+					margin-bottom: 1rem;
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					&:last-child {
+						margin-right: 0;
+					}
 				}
-			}
 
-			.intro__iphone {
-				.intro__btn {
-					bottom: -20%;
+				.intro__tv,
+				.intro__iphone {
+					display: flex;
+					justify-content: center;
+					.intro__btn {
+						bottom: -40%;
+					}
 				}
-			}
 
-			.intro__audio {
-				display: flex;
-				justify-content: center;
-			}
+				.intro__iphone {
+					.intro__btn {
+						bottom: -20%;
+					}
+				}
 
-			.btn__present {
-				&::after {
-					display: none;
+				.intro__audio,
+				.intro__iphone,
+				.intro__tv {
+					display: flex;
+					justify-content: center;
+				}
+
+				.btn__present {
+					&::after {
+						display: none;
+					}
 				}
 			}
 		}
@@ -429,19 +426,67 @@
 
 @media screen and (max-width: 767px) {
 	.repair {
-		.intro__title {
-			font-size: 20px !important;
-		}
-
 		.intro {
-			.btn__present {
+			.intro__title {
+				font-size: 20px !important;
+				display: none;
+				&_mobile {
+					display: block;
+				}
+			}
+
+			.intro__items {
 				display: none;
 			}
-		}
-		.intro__tv,
-		.intro__iphone,
-		.intro__audio {
-			display: none !important;
+
+			.intro__btn {
+				width: 80%;
+				display: none;
+				width: 80%;
+				button {
+					width: 100%;
+					height: 60px;
+				}
+				&_mobile {
+					display: block !important;
+					.btn-default__call {
+						position: absolute;
+						top: 4%;
+						right: -11%;
+						z-index: 3;
+						svg {
+							position: absolute;
+							top: 0;
+							right: 0;
+							height: 50px;
+							width: 50px;
+							padding: 10px;
+							box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+							border-radius: 50%;
+							backdrop-filter: blur(5px);
+							background: rgba(255, 255, 255, 0.4);
+							// margin-left: -63%;
+							// margin-bottom: 29%;
+						}
+					}
+				}
+				.btn__present {
+					display: block;
+					position: absolute;
+					top: -125%;
+					left: 9%;
+					width: 90px;
+					height: 70px;
+					background: url(../img/intro/intro__present.png) no-repeat;
+					z-index: 1;
+					&::before {
+						display: none;
+					}
+					&::after {
+						top: 16%;
+					}
+				}
+			}
 		}
 	}
 }
@@ -450,15 +495,16 @@
 	.repair {
 		.intro {
 			.intro__btn {
-				.btn-default__call img:first-child {
-					box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-					border-radius: 50%;
-					padding: 9px;
-					margin-left: -3px;
-					-webkit-backdrop-filter: blur(5px);
-					backdrop-filter: blur(5px);
-					background: rgba(255, 255, 255, 0.4);
-					margin-bottom: 23%;
+				display: none;
+				&_mobile {
+					display: block;
+
+					.btn-default__call {
+						svg {
+							margin-left: -1%;
+							margin-bottom: 16%;
+						}
+					}
 				}
 			}
 		}

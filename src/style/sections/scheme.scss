@@ -82,3 +82,11 @@
 		margin-top: 15rem;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.repair {
+		.scheme {
+			margin-top: 25rem;
+		}
+	}
+}
