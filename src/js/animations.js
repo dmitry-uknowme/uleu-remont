@@ -52,7 +52,11 @@ const burgerMenu = () => {
 	const burgerMenuTexts = document.querySelectorAll('.header__item_menu-text');
 	const fullMobileMenu = document.querySelector('.header__menu_mobile_full');
 
-	const isMobile = window.innerWidth <= 767 || navigator.userAgent.match(/Android/i, /webOS/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i);
+	// Баг, когда появляется кнопка с меню и боковая панель вместе
+	// navigator.userAgent.match возвращает массив, а не bool
+	// const isMobile = window.innerWidth <= 767 || navigator.userAgent.match(/Android/i, /webOS/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i);
+
+	const isMobile = window.innerWidth <= 767;
 
 	let activeMenu = false;
 

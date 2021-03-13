@@ -8076,8 +8076,8 @@ body._fixed {
     height: 100%;
     background: white;
     z-index: 10;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%); }
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
     .header__menu_mobile_full ul {
       width: 80%;
       margin: 2rem auto auto; }
@@ -8594,12 +8594,13 @@ body._fixed {
     font-weight: 700;
     color: #ababab;
     text-transform: uppercase;
-    line-height: 1rem;
+    line-height: 1.1rem;
     letter-spacing: 0.5px; }
 
 .repair .intro .intro__tv,
 .repair .intro .intro__iphone,
 .repair .intro .intro__audio {
+  text-align: center;
   margin-top: 55px;
   position: relative; }
   .repair .intro .intro__tv .intro__btn,
@@ -8607,7 +8608,7 @@ body._fixed {
   .repair .intro .intro__audio .intro__btn {
     font-size: 18px;
     position: absolute;
-    bottom: -56%;
+    bottom: -70%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
@@ -8626,6 +8627,10 @@ body._fixed {
       font-size: 18px; }
 
 @media screen and (max-width: 1199px) {
+  .repair .intro__tv,
+  .repair .intro__iphone,
+  .repair .intro__audio {
+    display: none !important; }
   .repair .repair .intro .intro__title {
     font-size: 25px; }
   .repair .repair .intro .intro__items {
@@ -8662,6 +8667,19 @@ body._fixed {
     display: none; } }
 
 @media screen and (max-width: 767px) {
+  .repair .intro .intro__tv,
+  .repair .intro .intro__iphone,
+  .repair .intro .intro__audio {
+    display: block !important; }
+    .repair .intro .intro__tv img,
+    .repair .intro .intro__iphone img,
+    .repair .intro .intro__audio img {
+      width: 50%;
+      max-width: 50%;
+      margin-bottom: 1rem; }
+  .repair .intro .intro__audio img,
+  .repair .intro .intro__tv img {
+    margin-bottom: 4rem; }
   .repair .intro .intro__title {
     font-size: 20px !important;
     display: none; }
@@ -8714,9 +8732,18 @@ body._fixed {
     display: none; }
     .repair .intro .intro__btn_mobile {
       display: block; }
-      .repair .intro .intro__btn_mobile .btn-default__call svg {
-        margin-left: -1%;
-        margin-bottom: 16%; } }
+      .repair .intro .intro__btn_mobile .btn-default__call {
+        top: 16%; }
+        .repair .intro .intro__btn_mobile .btn-default__call svg {
+          height: 40px;
+          width: 40px;
+          margin-left: -1%;
+          margin-bottom: 16%; }
+      .repair .intro .intro__btn_mobile button {
+        font-size: 15px !important; }
+  .repair .intro .btn__present:after {
+    right: -165% !important;
+    font-size: 14px !important; } }
 
 .quiz {
   padding-bottom: 3rem; }

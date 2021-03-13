@@ -331,19 +331,21 @@
 				font-weight: 700;
 				color: #ababab;
 				text-transform: uppercase;
-				line-height: 1rem;
+				line-height: 1.1rem;
 				letter-spacing: 0.5px;
 			}
 		}
 		.intro__tv,
 		.intro__iphone,
 		.intro__audio {
+			text-align: center;
 			margin-top: 55px;
 			position: relative;
+
 			.intro__btn {
 				font-size: 18px;
 				position: absolute;
-				bottom: -56%;
+				bottom: -70%;
 				left: 50%;
 				transform: translateX(-50%);
 				&::after {
@@ -367,6 +369,13 @@
 	}
 
 	@media screen and (max-width: 1199px) {
+		.intro__tv,
+		.intro__iphone,
+		.intro__audio {
+			display: none !important;
+		}
+
+
 		.repair {
 			.intro {
 				.intro__title {
@@ -427,6 +436,23 @@
 @media screen and (max-width: 767px) {
 	.repair {
 		.intro {
+			.intro__tv,
+			.intro__iphone,
+			.intro__audio {
+				display: block !important;
+				img {
+					width: 50%;
+					max-width: 50%;
+					margin-bottom: 1rem;
+				}
+			}
+
+			.intro__audio,
+			.intro__tv {
+				img {
+					margin-bottom: 4rem;
+				}
+			}
 			.intro__title {
 				font-size: 20px !important;
 				display: none;
@@ -500,12 +526,23 @@
 					display: block;
 
 					.btn-default__call {
+						top: 16%;
 						svg {
+							height: 40px;
+							width: 40px;
 							margin-left: -1%;
 							margin-bottom: 16%;
 						}
 					}
+
+					button {
+						font-size: 15px !important;
+					}
 				}
+			}
+			.btn__present:after {
+				right: -165% !important;
+				font-size: 14px !important;
 			}
 		}
 	}
