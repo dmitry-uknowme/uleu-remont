@@ -65,8 +65,26 @@
 
 .reviews__btn {
 	& .btn-default {
+		padding-right: 80px;
 		position: relative;
 		z-index: 1;
+
+		& img {
+			position: absolute;
+			right: -52px;
+			bottom: -85px;
+
+			width: 180px;
+		}
+
+		//&:after {
+		//	content: " ";
+		//	position: absolute;
+		//	right: 0;
+		//	height: 70px;
+		//	width: 50px;
+		//	background-image: url("../img/reviews/reviews__phone.png");
+		//}
 	}
 }
 
@@ -151,6 +169,15 @@
 	.repair {
 		.reviews {
 			margin-top: 15rem;
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.reviews__btn {
+		img {
+			bottom: -55px !important;
+			width: 140px !important;
 		}
 	}
 }

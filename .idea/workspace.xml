@@ -1,160 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36024853-15e7-4e1c-b170-017452af0337" name="Default Changelist" comment="fix close dropdown menu">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/contacts__background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/contacts__settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/header__calc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/header__mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/header__man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/header__peregor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/header__repair.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/intro__check-mark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/intro__img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/intro__star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/intro__verified.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/parallelogram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/problems-item-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/problems-item-1_new.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/problems-item-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/problems-item-2_new.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/problems-item-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/problems-item-3_new.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/problems-item-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/problems-item-4_new.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-answer-2-img-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-answer-2-img-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-answer-2-img-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-item-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-item-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-item-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-item-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-item-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-item-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-item-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-item-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/quiz-item-9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/review-star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/reviews__img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/scheme-img-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/scheme-img-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/service-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/service-item-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/service-item-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/service-item-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/service-item-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/service-item-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/service-item-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/support__img-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021,_18_07_[Default_Changelist]/support__img-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_03_2021__18_07__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_03_2021,_18_59_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_03_2021__18_59__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="36024853-15e7-4e1c-b170-017452af0337" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/button/button__call-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/button/button__call-black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/button/button__call-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/button/button__call-white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/contacts/contacts__bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/contacts/contacts__bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/contacts/contacts__cloud-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/contacts/contacts__cloud-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/contacts/contacts__cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/contacts/contacts__cloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/contacts/contacts__settings.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/contacts/contacts__settings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header/header__border.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header/header__border.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header/header__calc.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header/header__calc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header/header__gpsmark.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header/header__gpsmark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header/header__mail.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header/header__mail.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header/header__profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header/header__profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header/header__tools.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header/header__tools.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/header/header__whatsapp.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/header/header__whatsapp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__audio.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__audio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__button-cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__button-cloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__features-checkmark.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__features-checkmark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__features-star.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__features-star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__features-verified.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__features-verified.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__inst1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__inst1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__inst2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__inst2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__iphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__iphone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__pdf.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__pdf.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__phone-cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__phone-cloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__phone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__present-goto.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__present-goto.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__present.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__present.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__tv-group.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__tv-group.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__tv-pult.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__tv-pult.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__tv-station.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__tv-station.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/intro/intro__tv.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/intro/intro__tv.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/modal/modal__form-success.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/modal/modal__form-success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems/problems-item-1_new.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems/problems-item-1_new.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems/problems-item-2_new.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems/problems-item-2_new.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems/problems-item-3_new.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems/problems-item-3_new.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems/problems-item-4_new.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems/problems-item-4_new.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems/problems__left-cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems/problems__left-cloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems/problems__left-error.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems/problems__left-error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems/problems__particle.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems/problems__particle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems/problems__right-cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems/problems__right-cloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/problems/problems__right-error.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/problems/problems__right-error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-answer-2-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-answer-2-img-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-answer-2-img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-answer-2-img-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-answer-2-img-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-answer-2-img-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-answer-3__img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-answer-3__img-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-answer-3__img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-answer-3__img-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-item-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-item-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-item-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-item-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-item-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-item-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-item-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-item-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-item-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-item-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-item-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-item-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-item-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-item-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-item-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-item-8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz-item-9.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz-item-9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__clock.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__clock.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__cloud-mini.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__cloud-mini.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__man.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__man.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__stopwatch.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__stopwatch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__timer-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__timer-arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__timer.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__timer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/quiz/quiz__tools.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/quiz/quiz__tools.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/reviews/reviews__bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/reviews/reviews__bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/reviews/reviews__btn-next.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/reviews/reviews__btn-next.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/reviews/reviews__mobile-mini.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/reviews/reviews__mobile-mini.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/reviews/reviews__phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/reviews/reviews__phone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/reviews/reviews__rating-star.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/reviews/reviews__rating-star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/scheme/scheme__man-audio.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/scheme/scheme__man-audio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/scheme/scheme__man-iphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/scheme/scheme__man-iphone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/scheme/scheme__man-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/scheme/scheme__man-left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/scheme/scheme__man-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/scheme/scheme__man-right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/scheme/scheme__man-tv.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/scheme/scheme__man-tv.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/service-item-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/service-item-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/service-item-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/service-item-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/service-item-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/service-item-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/service-item-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/service-item-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/service-item-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/service-item-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/service-item-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/service-item-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/service__bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/service__bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/service__red-light-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/service__red-light-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/service__red-light.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/service__red-light.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/support__img-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/support__img-left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/service/support__img-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/service/support__img-right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/support/support__img-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/support/support__img-left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/support/support__img-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/support/support__img-right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/support/support__man-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/support/support__man-right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/unused/parallelogram.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/unused/parallelogram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/unused/problems-item-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/unused/problems-item-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/unused/problems-item-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/unused/problems-item-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/unused/problems-item-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/unused/problems-item-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/unused/problems-item-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/unused/problems-item-4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/repair-audio.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/repair-audio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/repair-smartphone.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/repair-smartphone.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/repair-tv.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/repair-tv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/animations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/sections/reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/reviews.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +100,7 @@
       <workItem from="1615106499400" duration="755000" />
       <workItem from="1615437080697" duration="3417000" />
       <workItem from="1615549098772" duration="5284000" />
-      <workItem from="1615617036756" duration="2460000" />
+      <workItem from="1615617036756" duration="3843000" />
     </task>
     <task id="LOCAL-00001" summary="header">
       <created>1614281297951</created>
@@ -365,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615555387381</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="some fixs&#10;fix intro">
+      <created>1615620311467</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1615620311467</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +265,7 @@
     <MESSAGE value="more fixs" />
     <MESSAGE value="build" />
     <MESSAGE value="fix close dropdown menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix close dropdown menu" />
+    <MESSAGE value="some fixs&#10;fix intro" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixs&#10;fix intro" />
   </component>
 </project>

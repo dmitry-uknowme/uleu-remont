@@ -9523,8 +9523,14 @@ body._fixed {
     min-width: 500px; }
 
 .reviews__btn .btn-default {
+  padding-right: 80px;
   position: relative;
   z-index: 1; }
+  .reviews__btn .btn-default img {
+    position: absolute;
+    right: -52px;
+    bottom: -85px;
+    width: 180px; }
 
 .reviews-btn__next {
   z-index: 10;
@@ -9560,6 +9566,11 @@ body._fixed {
 @media screen and (max-width: 1199px) {
   .repair .reviews {
     margin-top: 15rem; } }
+
+@media screen and (max-width: 450px) {
+  .reviews__btn img {
+    bottom: -55px !important;
+    width: 140px !important; } }
 
 .support {
   margin-bottom: 15rem; }
